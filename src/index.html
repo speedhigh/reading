@@ -16,158 +16,410 @@
   }
 </style>
 
-<body class="">
-  <!-- page 1 -->
-  <div class="hidden print:block w-[210mm] h-[297mm] overflow-hidden bg-white text-gray-900 shadow mx-auto px-8 py-12 text-sm relative">
-    <div class="flex space-x-4">
-      <div class="shrink-0 w-[28%]">
-        <div
-          class="w-36 h-36 rounded-full border border-dashed border-indigo-400 flex items-center justify-center mx-auto">
-          <div class="w-[8.5rem] h-[8.5rem] rounded-full overflow-hidden">
-            <img src="./img/avatar_s.jpg" />
+<body class="bg-white text-gray-900">
+  <!-- print -->
+  <div class="hidden print:block">
+    <!-- page 1 -->
+    <div class="w-[210mm] h-[297mm] overflow-hidden shadow mx-auto px-8 py-12 text-sm relative">
+      <div class="flex space-x-4">
+        <div class="shrink-0 w-[28%]">
+          <div
+            class="w-36 h-36 rounded-full border border-dashed border-indigo-400 flex items-center justify-center mx-auto">
+            <div class="w-[8.5rem] h-[8.5rem] rounded-full overflow-hidden">
+              <img src="./img/avatar_s.jpg" />
+            </div>
           </div>
-        </div>
-        <div class="mt-4 text-center">
-          <p class="font-bold text-2xl">李梓瑞</p>
-          <p class="mt-1 text-gray-600 text-[13px] space-x-0.5">
-            <span>前端开发工程师</span>
-            <span>|</span>
-            <span>27岁</span>
-            <span>|</span>
-            <span>4年经验</span>
-          </p>
-        </div>
-        <div class="divider"></div>
-        <div class="space-y-2 text-gray-600">
-          <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
-              <path fill-rule="evenodd"
-                d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-                clip-rule="evenodd" />
-            </svg>
-            <p>山东・威海</p>
+          <div class="mt-4 text-center">
+            <p class="font-bold text-2xl">李梓瑞</p>
+            <p class="mt-1 text-gray-600 text-[13px] space-x-0.5">
+              <span>前端开发工程师</span>
+              <span>|</span>
+              <span>27岁</span>
+              <span>|</span>
+              <span>4年经验</span>
+            </p>
           </div>
-          <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
-              <path fill-rule="evenodd"
-                d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
-                clip-rule="evenodd" />
-            </svg>
-            <p>1516613648</p>
+          <div class="divider"></div>
+          <div class="space-y-2 text-gray-600">
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
+                <path fill-rule="evenodd"
+                  d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>山东・威海</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
+                <path fill-rule="evenodd"
+                  d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>1516613648</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
+                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                <path
+                  d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+              </svg>
+              <p>image8870@gmail.com</p>
+            </div>
           </div>
-          <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
-              <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
-              <path
-                d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
-            </svg>
-            <p>image8870@gmail.com</p>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <div class="space-y-4">
-          <p class="font-bold text-xl">技能</p>
+          <div class="divider"></div>
           <div class="space-y-4">
-            <div class="space-y-2">
-              <p class="font-bold">html</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-8/12 bg-indigo-600 rounded-lg z-20"></div>
+            <p class="font-bold text-xl">技能</p>
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <p class="font-bold">html</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-9/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">熟练</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold">css</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-7/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">掌握</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold">js</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-7/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">掌握</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold">vue</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-9/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">熟练</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold">小程序/uniapp</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-9/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">熟练</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold">ts</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-6/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">了解</p>
+                </div>
               </div>
             </div>
-            <div class="space-y-2">
-              <p class="font-bold">css</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-7/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <p class="font-bold">js</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-8/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <p class="font-bold">vue3</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-9/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <p class="font-bold">小程序/uniapp</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-8/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <p class="font-bold">ts</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-5/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="grow py-2 space-y-6">
+          <!-- 工作经历 -->
+          <div class="space-y-2.5">
+            <h2 class="font-bold text-xl">工作经历</h2>
+            <ul class="-ml-[500px] timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+              <li>
+                <div class="timeline-middle">
+                  <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
+                </div>
+                <div class="timeline-end mb-8 pl-2 w-full">
+                  <div class="w-full flex items-center justify-between">
+                    <p class="font-bold">光达在线(北京)健康科技有限公司</p>
+                    <p class="font-mono italic text-[13px]">2023.01-2024.07</p>
+                  </div>
+                  <div class="py-2 text-gray-600 text-[13px] text-left space-y-1">
+                    <p>1、负责光大健康APP后台、光达在线OA系统、CRM-H医疗系统等项目的开发</p>
+                    <p>2、针对项目代码进行优化、封装公共方法与公共组件，提高代码复用性和可维护性</p>
+                    <p>3、解决项目开发中的技术难题、保证迭代速度与产品质量</p>
+                  </div>
+                </div>
+                <hr class="bg-indigo-100" />
+              </li>
+              <li>
+                <hr class="bg-indigo-100" />
+                <div class="timeline-middle">
+                  <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
+                </div>
+                <div class="timeline-end mb-8 pl-2 w-full">
+                  <div class="w-full flex items-center justify-between">
+                    <p class="font-bold">余益惠健康科技集团有限公司</p>
+                    <p class="font-mono italic text-[13px]">2021.07-2022.09</p>
+                  </div>
+                  <div class="py-2 text-gray-600 text-[13px] text-left space-y-1">
+                    <p>1、负责香港木子网、九州药品网、20号商城小程序、余益惠健康平台的开发及维护</p>
+                    <p>2、与产品经理和UI设计师紧密协作，共同完善并推行项目规范，确保项目开发的一致性和规范性</p>
+                  </div>
+                </div>
+                <hr class="bg-indigo-100" />
+              </li>
+              <li>
+                <hr class="bg-indigo-100" />
+                <div class="timeline-middle">
+                  <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
+                </div>
+                <div class="timeline-end mb-8 pl-2 w-full">
+                  <div class="w-full flex items-center justify-between">
+                    <p class="font-bold">威海卓一地产顾问有限公司</p>
+                    <p class="font-mono italic text-[13px]">2020.03-2021.07</p>
+                  </div>
+                  <div class="pt-2 text-gray-600 text-[13px] text-left space-y-1">
+                    <p>1、负责公司内部支撑平台、官网、anbred新房二手房咨询平台的开发及维护</p>
+                    <p>2、优化迭代公司原有项目，参与公司项目从vue2 到 vue3 的升级</p>
+                  </div>
+                </div>
+                <hr class="bg-indigo-100" />
+              </li>
+            </ul>
+          </div>
+          <!-- 项目经历 -->
+          <div class="space-y-2.5">
+            <h2 class="font-bold text-xl">项目经历</h2>
+            <ul class="-ml-[500px] timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+              <li>
+                <div class="timeline-middle">
+                  <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
+                </div>
+                <div class="timeline-end mb-8 pl-2 w-full">
+                  <div class="w-full flex items-center justify-between">
+                    <p class="font-bold">LT转运-雅虎拍卖小帮手（小程序）</p>
+                    <p class="font-mono italic text-[13px]">2024.04-2024-07</p>
+                  </div>
+                  <div class="pt-2 pb-4 text-[13px] text-left">
+                    <div class="mt-2 flex">
+                      <p class="shrink-0 w-[5.5rem] font-bold">项目技术栈：</p>
+                      <div class="flex flex-wrap">
+                        <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">uniapp</button>
+                        <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Vue3</button>
+                        <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Vite</button>
+                        <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Ts</button>
+                        <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">UnoCss</button>
+                        <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">wot-ui</button>
+                      </div>
+                    </div>
+                    <div class="mt-1 flex">
+                      <p class="shrink-0 w-[5.5rem] md:w-24 font-bold">项目描述：</p>
+                      <p class="text-gray-600">为解决海外竞拍的语言障碍、支付及物流难题而开发的LT转运小程序，实现了一站式竞拍、打包、转运等服务。</p>
+                    </div>
+                    <div class="mt-2 flex">
+                      <p class="shrink-0 w-[5.5rem] md:w-24 font-bold">项目亮点：</p>
+                      <div class="space-y-1">
+                        <p>
+                          <strong>前沿的技术栈：</strong>
+                          <span class="text-gray-600">该项目集成多种工具和技术，使用了最新的前端技术栈，无需依靠 HBuilderX ，通过命令行方式即可在 VSCode
+                            运行</span>
+                        </p>
+                        <p>
+                          <strong>便捷的开发体验：</strong>
+                          <span class="text-gray-600">使用 @uni-helper 为项目提供约定式路由、 layout布局等丰富的便捷功能</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mt-5 flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0">
+                      <div>
+                        <svg viewBox="0 0 366 729" role="img" class="mx-auto w-60 max-w-full drop-shadow-xl">
+                          <title>App screenshot</title>
+                          <defs>
+                            <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
+                              <rect width="316" height="684" rx="36" />
+                            </clipPath>
+                          </defs>
+                          <path fill="#4B5563"
+                            d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z" />
+                          <path fill="#343E4E"
+                            d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
+                          <foreignObject width="316" height="684" transform="translate(24 24)"
+                            clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
+                            <div class="w-full h-full rounded-3xl overflow-hidden">
+                              <img src="./img/LT_01.jpg" alt="" class="w-full h-full">
+                            </div>
+                          </foreignObject>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg viewBox="0 0 366 729" role="img" class="mx-auto w-60 max-w-full drop-shadow-xl">
+                          <title>App screenshot</title>
+                          <defs>
+                            <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
+                              <rect width="316" height="684" rx="36" />
+                            </clipPath>
+                          </defs>
+                          <path fill="#4B5563"
+                            d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z" />
+                          <path fill="#343E4E"
+                            d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
+                          <foreignObject width="316" height="684" transform="translate(24 24)"
+                            clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
+                            <div class="w-full h-full rounded-3xl overflow-hidden">
+                              <img src="./img/LT_03.jpg" alt="" class="w-full h-full">
+                            </div>
+                          </foreignObject>
+                        </svg>
+                      </div>
+                      <div>
+                        <svg viewBox="0 0 366 729" role="img" class="mx-auto w-60 max-w-full drop-shadow-xl">
+                          <title>App screenshot</title>
+                          <defs>
+                            <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
+                              <rect width="316" height="684" rx="36" />
+                            </clipPath>
+                          </defs>
+                          <path fill="#4B5563"
+                            d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z" />
+                          <path fill="#343E4E"
+                            d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
+                          <foreignObject width="316" height="684" transform="translate(24 24)"
+                            clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
+                            <div class="w-full h-full rounded-3xl overflow-hidden">
+                              <img src="./img/LT_04.jpg" alt="" class="w-full h-full">
+                            </div>
+                          </foreignObject>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="bg-indigo-100" />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="grow py-2 space-y-6">
-        <!-- 工作经历 -->
-        <div class="space-y-2.5">
-          <h2 class="font-bold text-xl">工作经历</h2>
-          <ul class="-ml-[500px] timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-            <li>
-              <div class="timeline-middle">
-                <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
-              </div>
-              <div class="timeline-end mb-8 pl-2 w-full">
-                <div class="w-full flex items-center justify-between">
-                  <p class="font-bold">光达在线(北京)健康科技有限公司</p>
-                  <p class="font-mono italic text-[13px]">2023.01-2024.07</p>
-                </div>
-                <div class="py-2 text-gray-600 text-[13px] text-left space-y-1">
-                  <p>1、负责光大健康APP后台、光达在线OA系统、CRM-H医疗系统等项目的开发</p>
-                  <p>2、针对项目代码进行优化、封装公共方法与公共组件，提高代码复用性和可维护性</p>
-                  <p>3、解决项目开发中的技术难题、保证迭代速度与产品质量</p>
-                </div>
-              </div>
-              <hr class="bg-indigo-100" />
-            </li>
-            <li>
-              <hr class="bg-indigo-100" />
-              <div class="timeline-middle">
-                <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
-              </div>
-              <div class="timeline-end mb-8 pl-2 w-full">
-                <div class="w-full flex items-center justify-between">
-                  <p class="font-bold">余益惠健康科技集团有限公司</p>
-                  <p class="font-mono italic text-[13px]">2021.07-2022.09</p>
-                </div>
-                <div class="py-2 text-gray-600 text-[13px] text-left space-y-1">
-                  <p>1、负责香港木子网、九州药品网、20号商城小程序、余益惠健康平台的开发及维护</p>
-                  <p>2、与产品经理和UI设计师紧密协作，共同完善并推行项目规范，确保项目开发的一致性和规范性</p>
-                </div>
-              </div>
-              <hr class="bg-indigo-100" />
-            </li>
-            <li>
-              <hr class="bg-indigo-100" />
-              <div class="timeline-middle">
-                <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
-              </div>
-              <div class="timeline-end mb-8 pl-2 w-full">
-                <div class="w-full flex items-center justify-between">
-                  <p class="font-bold">威海卓一地产顾问有限公司</p>
-                  <p class="font-mono italic text-[13px]">2020.03-2021.07</p>
-                </div>
-                <div class="pt-2 text-gray-600 text-[13px] text-left space-y-1">
-                  <p>1、负责公司内部支撑平台、官网、anbred新房二手房咨询平台的开发及维护</p>
-                  <p>2、优化迭代公司原有项目，参与公司项目从vue2 到 vue3 的升级</p>
-                </div>
-              </div>
-              <hr class="bg-indigo-100" />
-            </li>
-          </ul>
+      <div class="absolute bottom-2 inset-x-0 w-full bg-white">
+        <div class="flex items-center justify-center md:space-x-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="w-3.5 h-3.5 md:w-4 md:h-4">
+            <path fill-rule="evenodd"
+              d="M18.97 3.659a2.25 2.25 0 0 0-3.182 0l-10.94 10.94a3.75 3.75 0 1 0 5.304 5.303l7.693-7.693a.75.75 0 0 1 1.06 1.06l-7.693 7.693a5.25 5.25 0 1 1-7.424-7.424l10.939-10.94a3.75 3.75 0 1 1 5.303 5.304L9.097 18.835l-.008.008-.007.007-.002.002-.003.002A2.25 2.25 0 0 1 5.91 15.66l7.81-7.81a.75.75 0 0 1 1.061 1.06l-7.81 7.81a.75.75 0 0 0 1.054 1.068L18.97 6.84a2.25 2.25 0 0 0 0-3.182Z"
+              clip-rule="evenodd" />
+          </svg>
+          <p class="text-gray-600">https://speedhigh.github.io/reading/src/index.html</p>
         </div>
-        <!-- 项目经历 -->
-        <div class="space-y-2.5">
-          <h2 class="font-bold text-xl">项目经历</h2>
+        <div class="divider px-80">1</div>
+      </div>
+    </div>
+    <!-- page2 -->
+    <div class="w-[210mm] h-[297mm] overflow-hidden shadow mx-auto px-8 py-12 text-sm relative">
+      <div class="flex space-x-4">
+        <div class="shrink-0 w-[28%]">
+          <div
+            class="w-36 h-36 rounded-full border border-dashed border-indigo-400 flex items-center justify-center mx-auto">
+            <div class="w-[8.5rem] h-[8.5rem] rounded-full overflow-hidden">
+              <img src="./img/avatar_s.jpg" />
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <p class="font-bold text-2xl">李梓瑞</p>
+            <p class="mt-1 text-gray-600 text-[13px] space-x-0.5">
+              <span>前端开发工程师</span>
+              <span>|</span>
+              <span>27岁</span>
+              <span>|</span>
+              <span>4年经验</span>
+            </p>
+          </div>
+          <div class="divider"></div>
+          <div class="space-y-2 text-gray-600">
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
+                <path fill-rule="evenodd"
+                  d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>山东・威海</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
+                <path fill-rule="evenodd"
+                  d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <p>1516613648</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
+                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                <path
+                  d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+              </svg>
+              <p>image8870@gmail.com</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="space-y-4">
+            <p class="font-bold text-xl">技能</p>
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <p class="font-bold">html</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-9/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">熟练</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold">css</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-7/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">掌握</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold">js</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-7/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">掌握</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold">vue</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-9/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">熟练</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold">小程序/uniapp</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-9/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">熟练</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <p class="font-bold">ts</p>
+                <div class="flex items-center space-x-4">
+                  <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
+                    <div class="w-6/12 bg-indigo-600 rounded-lg z-20"></div>
+                  </div>
+                  <p class="shrink-0 text-gray-600 text-[13px]">了解</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grow py-2">
           <ul class="-ml-[500px] timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
             <li>
               <div class="timeline-middle">
@@ -175,392 +427,127 @@
               </div>
               <div class="timeline-end mb-8 pl-2 w-full">
                 <div class="w-full flex items-center justify-between">
-                  <p class="font-bold">LT转运-雅虎拍卖小帮手（小程序）</p>
-                  <p class="font-mono italic text-[13px]">2024.04-2024-07</p>
+                  <p class="font-bold">光达在线OA管理系统</p>
+                  <p class="font-mono italic text-[13px]">2022.10-2023.04</p>
                 </div>
                 <div class="pt-2 pb-4 text-[13px] text-left">
                   <div class="mt-2 flex">
                     <p class="shrink-0 w-[5.5rem] font-bold">项目技术栈：</p>
                     <div class="flex flex-wrap">
-                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">uniapp</button>
                       <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Vue3</button>
                       <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Vite</button>
-                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Ts</button>
-                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">UnoCss</button>
-                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">wot-ui</button>
+                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Pinia</button>
+                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Vueuse</button>
+                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">NaiveUI</button>
+                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">wangEditor</button>
                     </div>
                   </div>
                   <div class="mt-1 flex">
                     <p class="shrink-0 w-[5.5rem] md:w-24 font-bold">项目描述：</p>
-                    <p class="text-gray-600">为解决海外竞拍的语言障碍、支付及物流难题而开发的LT转运小程序，实现了一站式竞拍、打包、转运等服务。</p>
+                    <p class="text-gray-600">
+                      一套高效的企业级OA系统，该系统不仅涵盖公告发布、员工检索、操作日志记录等基础功能，还支持流程模板的个性化定制与编辑，实现了从表单设计到审批流程的灵活配置，确保每个业务流程都能精准对接实际需求。
+                    </p>
                   </div>
                   <div class="mt-2 flex">
                     <p class="shrink-0 w-[5.5rem] md:w-24 font-bold">项目亮点：</p>
                     <div class="space-y-1">
                       <p>
-                        <strong>前沿的技术栈：</strong>
-                        <span class="text-gray-600">该项目集成多种工具和技术，使用了最新的前端技术栈，无需依靠 HBuilderX ，通过命令行方式即可在 VSCode 运行</span>
+                        <strong>定制化日志板块：</strong>
+                        <span class="text-gray-600">通过对wangEditor进行二次封装，成功复刻了钉钉日志的功能特性，为用户提供了丰富、便捷的文档编辑体验。</span>
                       </p>
                       <p>
-                        <strong>便捷的开发体验：</strong>
-                        <span class="text-gray-600">使用 @uni-helper 为项目提供约定式路由、 layout布局等丰富的便捷功能</span>
+                        <strong>交互表单的可视化构建：</strong>
+                        <span class="text-gray-600">实现了业务表单的界面化组件拖拽配置，让非技术人员也能轻松设计并部署符合需求表单系统，极大地提升了项目的灵活性与可扩展性。</span>
                       </p>
                     </div>
                   </div>
-                  <div class="mt-5 flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0">
-                    <div>
-                      <svg viewBox="0 0 366 729" role="img" class="mx-auto w-60 max-w-full drop-shadow-xl">
-                        <title>App screenshot</title>
-                        <defs>
-                          <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
-                            <rect width="316" height="684" rx="36" />
-                          </clipPath>
-                        </defs>
-                        <path fill="#4B5563"
-                          d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z" />
-                        <path fill="#343E4E"
-                          d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
-                        <foreignObject width="316" height="684" transform="translate(24 24)"
-                          clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-                          <img src="./img/LT_01.jpg" alt="" class="w-full h-full">
-                        </foreignObject>
-                      </svg>
-                    </div>
-                    <div>
-                      <svg viewBox="0 0 366 729" role="img" class="mx-auto w-60 max-w-full drop-shadow-xl">
-                        <title>App screenshot</title>
-                        <defs>
-                          <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
-                            <rect width="316" height="684" rx="36" />
-                          </clipPath>
-                        </defs>
-                        <path fill="#4B5563"
-                          d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z" />
-                        <path fill="#343E4E"
-                          d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
-                        <foreignObject width="316" height="684" transform="translate(24 24)"
-                          clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-                          <img src="./img/LT_03.jpg" alt="" class="w-full h-full">
-                        </foreignObject>
-                      </svg>
-                    </div>
-                    <div>
-                      <svg viewBox="0 0 366 729" role="img" class="mx-auto w-60 max-w-full drop-shadow-xl">
-                        <title>App screenshot</title>
-                        <defs>
-                          <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
-                            <rect width="316" height="684" rx="36" />
-                          </clipPath>
-                        </defs>
-                        <path fill="#4B5563"
-                          d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z" />
-                        <path fill="#343E4E"
-                          d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
-                        <foreignObject width="316" height="684" transform="translate(24 24)"
-                          clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-                          <img src="./img/LT_04.jpg" alt="" class="w-full h-full">
-                        </foreignObject>
-                      </svg>
-                    </div>
+                  <div class="mt-2">
+                    <img src="./img/OA_01.jpeg" alt="">
                   </div>
-                </div>
-              </div>
-              <hr class="bg-indigo-100" />
-              <!-- </li>
-            <li>
-              <hr class="bg-indigo-100" />
-              <div class="timeline-middle">
-                <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
-              </div>
-              <div class="timeline-end mb-8 pl-2 w-full">
-                <div class="w-full flex items-center justify-between">
-                  <p class="font-bold">光达在线OA管理系统</p>
-                  <p class="font-mono italic text-[13px]">2022.10-2023.04</p>
-                </div>
-                <div class="py-2 text-gray-500 text-[13px] text-left space-y-1">
-                  <p>1、负责香港木子网、九州药品网、20号商城小程序、余益惠健康平台的开发及维护</p>
-                  <p>2、与产品经理和UI设计师紧密协作，共同完善并推行项目规范，确保项目开发的一致性和规范性</p>
                 </div>
               </div>
               <hr class="bg-indigo-100" />
             </li>
-            <li>
+            <li class="mt-2">
               <hr class="bg-indigo-100" />
               <div class="timeline-middle">
                 <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
               </div>
               <div class="timeline-end mb-8 pl-2 w-full">
                 <div class="w-full flex items-center justify-between">
-                  <p class="font-bold">香港木子网</p>
-                  <p class="font-mono italic text-[13px]">2021.07-2021.09</p>
+                  <p class="font-bold">anbred新房二手房咨询平台</p>
+                  <p class="font-mono italic text-[13px]">2021.04-2021.06</p>
                 </div>
-                <div class="pt-2 text-gray-500 text-[13px] text-left space-y-1">
-                  <p>1、负责公司内部支撑平台、官网、anbred新房二手房咨询平台的开发及维护</p>
-                  <p>2、优化迭代公司原有项目，参与公司项目从vue2 到 vue3 的升级</p>
-                </div>
-              </div>
-              <hr class="bg-indigo-100" />
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="absolute bottom-2 inset-x-0 w-full bg-white">
-      <div class="flex items-center justify-center md:space-x-3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-          class="w-3.5 h-3.5 md:w-4 md:h-4">
-          <path fill-rule="evenodd"
-            d="M18.97 3.659a2.25 2.25 0 0 0-3.182 0l-10.94 10.94a3.75 3.75 0 1 0 5.304 5.303l7.693-7.693a.75.75 0 0 1 1.06 1.06l-7.693 7.693a5.25 5.25 0 1 1-7.424-7.424l10.939-10.94a3.75 3.75 0 1 1 5.303 5.304L9.097 18.835l-.008.008-.007.007-.002.002-.003.002A2.25 2.25 0 0 1 5.91 15.66l7.81-7.81a.75.75 0 0 1 1.061 1.06l-7.81 7.81a.75.75 0 0 0 1.054 1.068L18.97 6.84a2.25 2.25 0 0 0 0-3.182Z"
-            clip-rule="evenodd" />
-        </svg>
-        <p class="text-gray-600">https://speedhigh.github.io/reading/src/index.html</p>
-      </div>
-      <div class="divider px-80">1</div>
-    </div>
-  </div>
-  <!-- page2 -->
-  <div class="hidden print:block w-[210mm] h-[297mm] overflow-hidden bg-white text-gray-900 shadow mx-auto px-8 py-12 text-sm relative">
-    <div class="flex space-x-4">
-      <div class="shrink-0 w-[28%]">
-        <div
-          class="w-36 h-36 rounded-full border border-dashed border-indigo-400 flex items-center justify-center mx-auto">
-          <div class="w-[8.5rem] h-[8.5rem] rounded-full overflow-hidden">
-            <img src="./img/avatar_s.jpg" />
-          </div>
-        </div>
-        <div class="mt-4 text-center">
-          <p class="font-bold text-2xl">李梓瑞</p>
-          <p class="mt-1 text-gray-600 text-[13px] space-x-0.5">
-            <span>前端开发工程师</span>
-            <span>|</span>
-            <span>27岁</span>
-            <span>|</span>
-            <span>4年经验</span>
-          </p>
-        </div>
-        <div class="divider"></div>
-        <div class="space-y-2 text-gray-600">
-          <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
-              <path fill-rule="evenodd"
-                d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-                clip-rule="evenodd" />
-            </svg>
-            <p>山东・威海</p>
-          </div>
-          <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
-              <path fill-rule="evenodd"
-                d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
-                clip-rule="evenodd" />
-            </svg>
-            <p>1516613648</p>
-          </div>
-          <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-3.5">
-              <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
-              <path
-                d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
-            </svg>
-            <p>image8870@gmail.com</p>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <div class="space-y-4">
-          <p class="font-bold text-xl">技能</p>
-          <div class="space-y-4">
-            <div class="space-y-2">
-              <p class="font-bold">html</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-8/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <p class="font-bold">css</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-7/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <p class="font-bold">js</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-8/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <p class="font-bold">vue3</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-9/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <p class="font-bold">小程序/uniapp</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-8/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <p class="font-bold">ts</p>
-              <div class="w-full h-2 bg-indigo-50 rounded-lg flex">
-                <div class="w-5/12 bg-indigo-600 rounded-lg z-20"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="grow py-2">
-        <ul class="-ml-[500px] timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-          <li>
-            <div class="timeline-middle">
-              <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
-            </div>
-            <div class="timeline-end mb-8 pl-2 w-full">
-              <div class="w-full flex items-center justify-between">
-                <p class="font-bold">光达在线OA管理系统</p>
-                <p class="font-mono italic text-[13px]">2022.10-2023.04</p>
-              </div>
-              <div class="pt-2 pb-4 text-[13px] text-left">
-                <div class="mt-2 flex">
-                  <p class="shrink-0 w-[5.5rem] font-bold">项目技术栈：</p>
-                  <div class="flex flex-wrap">
-                    <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Vue3</button>
-                    <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Vite</button>
-                    <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Pinia</button>
-                    <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Vueuse</button>
-                    <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">NaiveUI</button>
-                    <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">wangEditor</button>
+                <div class="pt-2 pb-4 text-[13px] text-left">
+                  <div class="mt-2 flex">
+                    <p class="shrink-0 w-[5.5rem] font-bold">项目技术栈：</p>
+                    <div class="flex flex-wrap">
+                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Vue3</button>
+                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">Vite</button>
+                      <button class="btn btn-xs btn-outline btn-primary mr-2 mb-1.5">VantUI</button>
+                    </div>
                   </div>
-                </div>
-                <div class="mt-1 flex">
-                  <p class="shrink-0 w-[5.5rem] md:w-24 font-bold">项目描述：</p>
-                  <p class="text-gray-600">一套高效的企业级OA系统，该系统不仅涵盖公告发布、员工检索、操作日志记录等基础功能，还支持流程模板的个性化定制与编辑，实现了从表单设计到审批流程的灵活配置，确保每个业务流程都能精准对接实际需求。</p>
-                </div>
-                <div class="mt-2 flex">
-                  <p class="shrink-0 w-[5.5rem] md:w-24 font-bold">项目亮点：</p>
-                  <div class="space-y-1">
-                    <p>
-                      <strong>定制化日志板块：</strong>
-                      <span class="text-gray-600">通过对wangEditor进行二次封装，成功复刻了钉钉日志的功能特性，为用户提供了丰富、便捷的文档编辑体验。</span>
-                    </p>
-                    <p>
-                      <strong>交互表单的可视化构建：</strong>
-                      <span class="text-gray-600">实现了业务表单的界面化组件拖拽配置，让非技术人员也能轻松设计并部署符合需求表单系统，极大地提升了项目的灵活性与可扩展性。</span>
+                  <div class="mt-1 flex">
+                    <p class="shrink-0 w-[5.5rem] md:w-24 font-bold">项目描述：</p>
+                    <p class="text-gray-600">
+                      一个新房二手房在线咨询平台，用户可通过该平台筛选房源并查看详情，包含置业顾问、房屋咨询、房贷算、沙盘、周边配套等功能。
                     </p>
                   </div>
-                </div>
-                <div class="mt-2">
-                  <img src="./img/OA_01.jpeg" alt="">
-                </div>
-              </div>
-            </div>
-            <hr class="bg-indigo-100" />
-            <!-- </li>
-          <li>
-            <hr class="bg-indigo-100" />
-            <div class="timeline-middle">
-              <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
-            </div>
-            <div class="timeline-end mb-8 pl-2 w-full">
-              <div class="w-full flex items-center justify-between">
-                <p class="font-bold">光达在线OA管理系统</p>
-                <p class="font-mono italic text-[13px]">2022.10-2023.04</p>
-              </div>
-              <div class="py-2 text-gray-500 text-[13px] text-left space-y-1">
-                <p>1、负责香港木子网、九州药品网、20号商城小程序、余益惠健康平台的开发及维护</p>
-                <p>2、与产品经理和UI设计师紧密协作，共同完善并推行项目规范，确保项目开发的一致性和规范性</p>
-              </div>
-            </div>
-            <hr class="bg-indigo-100" />
-          </li>
-          <li>
-            <hr class="bg-indigo-100" />
-            <div class="timeline-middle">
-              <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
-            </div>
-            <div class="timeline-end mb-8 pl-2 w-full">
-              <div class="w-full flex items-center justify-between">
-                <p class="font-bold">香港木子网</p>
-                <p class="font-mono italic text-[13px]">2021.07-2021.09</p>
-              </div>
-              <div class="pt-2 text-gray-500 text-[13px] text-left space-y-1">
-                <p>1、负责公司内部支撑平台、官网、anbred新房二手房咨询平台的开发及维护</p>
-                <p>2、优化迭代公司原有项目，参与公司项目从vue2 到 vue3 的升级</p>
-              </div>
-            </div>
-            <hr class="bg-indigo-100" />
-          </li> -->
-        </ul>
-        <!-- 自我评价 -->
-        <div class="mt-6 space-y-2.5">
-          <h2 class="font-bold text-xl">自我评价</h2>
-          <ul class="-ml-[500px] timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-            <li>
-              <div class="timeline-middle">
-                <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
-              </div>
-              <div class="timeline-end mb-8 w-full min-h-64">
-                <ul class="ml-8 list-disc space-y-2 text-gray-600">
-                  <li>对待工作积极、认真、负责。具有较强的学习能力，适应力强。</li>
-                  <li>能短时间内熟悉新的工作环境与新的管理理念。能正确对待具有挑战性的工作。</li>
-                  <li>有良好的软件开发规范意识，发自内心的热爱软件开发这个行业，希望在以后能得到很好的发展，并愿意长期投身于软件开发事业中。</li>
-                </ul>
-              </div>
-              <hr class="bg-indigo-100" />
-              <!-- </li>
-            <li>
-              <hr class="bg-indigo-100" />
-              <div class="timeline-middle">
-                <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
-              </div>
-              <div class="timeline-end mb-8 pl-2 w-full">
-                <div class="w-full flex items-center justify-between">
-                  <p class="font-bold">光达在线OA管理系统</p>
-                  <p class="font-mono italic text-[13px]">2022.10-2023.04</p>
-                </div>
-                <div class="py-2 text-gray-500 text-[13px] text-left space-y-1">
-                  <p>1、负责香港木子网、九州药品网、20号商城小程序、余益惠健康平台的开发及维护</p>
-                  <p>2、与产品经理和UI设计师紧密协作，共同完善并推行项目规范，确保项目开发的一致性和规范性</p>
+                  <div class="mt-2 flex">
+                    <p class="shrink-0 w-[5.5rem] md:w-24 font-bold">项目亮点：</p>
+                    <div class="space-y-1">
+                      <p>
+                        <strong>房贷计算器：</strong>
+                        <span class="text-gray-600">开发房贷计算器组件，并且根据房贷公式生成未来30年每月本金、利息的表单。</span>
+                      </p>
+                      <p>
+                        <strong>周选择器：</strong>
+                        <span class="text-gray-600">通过对van-picker组件的二次封装以及对日期的计算实现周选择器的功能</span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <hr class="bg-indigo-100" />
             </li>
-            <li>
-              <hr class="bg-indigo-100" />
-              <div class="timeline-middle">
-                <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
-              </div>
-              <div class="timeline-end mb-8 pl-2 w-full">
-                <div class="w-full flex items-center justify-between">
-                  <p class="font-bold">香港木子网</p>
-                  <p class="font-mono italic text-[13px]">2021.07-2021.09</p>
-                </div>
-                <div class="pt-2 text-gray-500 text-[13px] text-left space-y-1">
-                  <p>1、负责公司内部支撑平台、官网、anbred新房二手房咨询平台的开发及维护</p>
-                  <p>2、优化迭代公司原有项目，参与公司项目从vue2 到 vue3 的升级</p>
-                </div>
-              </div>
-              <hr class="bg-indigo-100" />
-            </li> -->
           </ul>
+          <!-- 自我评价 -->
+          <div class="mt-6 space-y-2.5">
+            <h2 class="font-bold text-xl">自我评价</h2>
+            <ul class="-ml-[500px] timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+              <li>
+                <div class="timeline-middle">
+                  <div class="w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
+                </div>
+                <div class="timeline-end mb-8 w-full">
+                  <ul class="ml-8 list-disc space-y-2 text-gray-600">
+                    <li>对待工作积极、认真、负责。具有较强的学习能力，适应力强。能短时间内熟悉新的工作环境与新的管理理念。能正确对待具有挑战性的工作。</li>
+                    <li>有良好的软件开发规范意识，发自内心的热爱软件开发这个行业，希望在以后能得到很好的发展，并愿意长期投身于软件开发事业中。</li>
+                  </ul>
+                </div>
+                <hr class="bg-indigo-100" />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="absolute bottom-2 inset-x-0 w-full bg-white">
-      <div class="flex items-center justify-center md:space-x-3">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-          class="w-3.5 h-3.5 md:w-4 md:h-4">
-          <path fill-rule="evenodd"
-            d="M18.97 3.659a2.25 2.25 0 0 0-3.182 0l-10.94 10.94a3.75 3.75 0 1 0 5.304 5.303l7.693-7.693a.75.75 0 0 1 1.06 1.06l-7.693 7.693a5.25 5.25 0 1 1-7.424-7.424l10.939-10.94a3.75 3.75 0 1 1 5.303 5.304L9.097 18.835l-.008.008-.007.007-.002.002-.003.002A2.25 2.25 0 0 1 5.91 15.66l7.81-7.81a.75.75 0 0 1 1.061 1.06l-7.81 7.81a.75.75 0 0 0 1.054 1.068L18.97 6.84a2.25 2.25 0 0 0 0-3.182Z"
-            clip-rule="evenodd" />
-        </svg>
-        <p class="text-gray-600">https://speedhigh.github.io/reading/src/index.html</p>
+      <div class="absolute bottom-2 inset-x-0 w-full bg-white">
+        <div class="flex items-center justify-center md:space-x-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="w-3.5 h-3.5 md:w-4 md:h-4">
+            <path fill-rule="evenodd"
+              d="M18.97 3.659a2.25 2.25 0 0 0-3.182 0l-10.94 10.94a3.75 3.75 0 1 0 5.304 5.303l7.693-7.693a.75.75 0 0 1 1.06 1.06l-7.693 7.693a5.25 5.25 0 1 1-7.424-7.424l10.939-10.94a3.75 3.75 0 1 1 5.303 5.304L9.097 18.835l-.008.008-.007.007-.002.002-.003.002A2.25 2.25 0 0 1 5.91 15.66l7.81-7.81a.75.75 0 0 1 1.061 1.06l-7.81 7.81a.75.75 0 0 0 1.054 1.068L18.97 6.84a2.25 2.25 0 0 0 0-3.182Z"
+              clip-rule="evenodd" />
+          </svg>
+          <p class="text-gray-600">https://speedhigh.github.io/reading/src/index.html</p>
+        </div>
+        <div class="divider px-80">2</div>
       </div>
-      <div class="divider px-80">2</div>
     </div>
   </div>
 
   <!-- web -->
-  <div class="bg-white text-gray-900 print:hidden">
+  <div class="print:hidden">
     <header class="fixed inset-x-0 top-0 z-50 bg-[rgba(255,255,255,0.5)] backdrop-blur-sm shadow">
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
@@ -611,7 +598,7 @@
           </div>
           <div class="mt-8 mx-auto max-w-2xl lg:mt-0 lg:mx-0">
             <h2 class="text-4xl font-bold tracking-tight sm:text-6xl">李梓瑞</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-400">Web前端开发人员，具有丰富的知识和经验，从事Web技术，技术崇拜，喜欢折腾，能提供高质量的工作。</p>
+            <p class="mt-6 text-lg leading-8 text-gray-400">Web前端开发人员，对待工作积极、认真、负责。具有较强的学习能力和适应能力，喜欢钻研，能提供高质量的工作。</p>
             <div class="mt-16 space-y-2">
               <div class="flex items-center space-x-2 md:space-x-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -768,7 +755,7 @@
                   <div class="space-y-3">
                     <p class="font-bold">html</p>
                     <div class="w-full h-2 bg-white rounded-lg flex">
-                      <div class="w-8/12 bg-indigo-600 rounded-lg z-20"></div>
+                      <div class="w-9/12 bg-indigo-600 rounded-lg z-20"></div>
                     </div>
                   </div>
                   <div class="space-y-3">
@@ -780,7 +767,7 @@
                   <div class="space-y-3">
                     <p class="font-bold">js</p>
                     <div class="w-full h-2 bg-white rounded-lg flex">
-                      <div class="w-8/12 bg-indigo-600 rounded-lg z-20"></div>
+                      <div class="w-7/12 bg-indigo-600 rounded-lg z-20"></div>
                     </div>
                   </div>
                   <div class="space-y-3">
@@ -792,13 +779,13 @@
                   <div class="space-y-3">
                     <p class="font-bold">小程序/uniapp</p>
                     <div class="w-full h-2 bg-white rounded-lg flex">
-                      <div class="w-8/12 bg-indigo-600 rounded-lg z-20"></div>
+                      <div class="w-9/12 bg-indigo-600 rounded-lg z-20"></div>
                     </div>
                   </div>
                   <div class="space-y-3">
                     <p class="font-bold">ts</p>
                     <div class="w-full h-2 bg-white rounded-lg flex">
-                      <div class="w-5/12 bg-indigo-600 rounded-lg z-20"></div>
+                      <div class="w-6/12 bg-indigo-600 rounded-lg z-20"></div>
                     </div>
                   </div>
                 </div>
@@ -937,7 +924,9 @@
                               d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
                             <foreignObject width="316" height="684" transform="translate(24 24)"
                               clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-                              <img src="./img/LT_01.jpg" alt="" class="w-full h-full">
+                              <div class="w-full h-full rounded-3xl overflow-hidden">
+                                <img src="./img/LT_01.jpg" alt="" class="w-full h-full">
+                              </div>
                             </foreignObject>
                           </svg>
                         </div>
@@ -955,7 +944,9 @@
                               d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
                             <foreignObject width="316" height="684" transform="translate(24 24)"
                               clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-                              <img src="./img/LT_02.jpg" alt="" class="w-full h-full">
+                              <div class="w-full h-full rounded-3xl overflow-hidden">
+                                <img src="./img/LT_02.jpg" alt="" class="w-full h-full">
+                              </div>
                             </foreignObject>
                           </svg>
                         </div>
@@ -973,7 +964,9 @@
                               d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
                             <foreignObject width="316" height="684" transform="translate(24 24)"
                               clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-                              <img src="./img/LT_03.jpg" alt="" class="w-full h-full">
+                              <div class="w-full h-full rounded-3xl overflow-hidden">
+                                <img src="./img/LT_03.jpg" alt="" class="w-full h-full">
+                              </div>
                             </foreignObject>
                           </svg>
                         </div>
@@ -991,7 +984,9 @@
                               d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
                             <foreignObject width="316" height="684" transform="translate(24 24)"
                               clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-                              <img src="./img/LT_04.jpg" alt="" class="w-full h-full">
+                              <div class="w-full h-full rounded-3xl overflow-hidden">
+                                <img src="./img/LT_04.jpg" alt="" class="w-full h-full">
+                              </div>
                             </foreignObject>
                           </svg>
                         </div>
@@ -1107,7 +1102,9 @@
                               d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
                             <foreignObject width="316" height="684" transform="translate(24 24)"
                               clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-                              <img src="./img/muzi_01.png" alt="" class="w-full h-full">
+                              <div class="w-full h-full rounded-3xl overflow-hidden">
+                                <img src="./img/muzi_01.png" alt="" class="w-full h-full">
+                              </div>
                             </foreignObject>
                           </svg>
                         </div>
@@ -1125,7 +1122,9 @@
                               d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
                             <foreignObject width="316" height="684" transform="translate(24 24)"
                               clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-                              <img src="./img/muzi_02.png" alt="" class="w-full h-full">
+                              <div class="w-full h-full rounded-3xl overflow-hidden">
+                                <img src="./img/muzi_02.png" alt="" class="w-full h-full">
+                              </div>
                             </foreignObject>
                           </svg>
                         </div>
@@ -1143,7 +1142,9 @@
                               d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
                             <foreignObject width="316" height="684" transform="translate(24 24)"
                               clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-                              <img src="./img/muzi_03.png" alt="" class="w-full h-full">
+                              <div class="w-full h-full rounded-3xl overflow-hidden">
+                                <img src="./img/muzi_03.png" alt="" class="w-full h-full">
+                              </div>
                             </foreignObject>
                           </svg>
                         </div>
