@@ -306,7 +306,7 @@
     <header class="fixed top-4 inset-x-4 z-50 mx-auto max-w-7xl">
       <nav id="siteNav" class="glass-nav-dark rounded-2xl px-4 py-3 sm:px-6" aria-label="主导航">
         <div class="flex items-center justify-between">
-          <a href="#home" class="brand-link font-mono lowercase tracking-tight">reading</a>
+          <a href="#home" class="brand-link font-mono lowercase tracking-tight"><span class="pixel-brand-icon" aria-hidden="true"></span>reading</a>
           <div id="desktopNav" class="hidden lg:flex items-center gap-7">
             <a href="#home" data-nav="home" class="nav-link nav-link-active">主页</a>
             <a href="#about" data-nav="about" class="nav-link">关于</a>
@@ -339,7 +339,9 @@
         <div class="hero-glow absolute inset-0 pointer-events-none" aria-hidden="true"></div>
         <div class="hero-orb size-[28rem] -top-24 right-[10%] opacity-70" aria-hidden="true"></div>
         <div class="hero-orb size-[20rem] bottom-[15%] -left-16 opacity-50" aria-hidden="true"></div>
-        <div class="hero-grid absolute inset-0 pointer-events-none opacity-70" aria-hidden="true"></div>
+        <div class="hero-grid absolute inset-0 pointer-events-none opacity-80" aria-hidden="true"></div>
+        <div class="hero-pixel-float top-[20%] left-[10%]" aria-hidden="true"></div>
+        <div class="hero-pixel-float hero-pixel-float-2 bottom-[28%] right-[15%]" aria-hidden="true"></div>
 
         <div class="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-16 lg:pt-32 lg:pb-24">
           <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-10 xl:gap-14">
@@ -363,9 +365,9 @@
                 <button type="button" id="printPdfButtonHero" class="btn-ghost hidden sm:inline-flex text-base px-7 py-3.5">导出简历</button>
               </div>
               <dl class="mt-14 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-6 border-t border-white/10 pt-8 sm:pt-10 max-w-lg">
-                <div><dt class="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-500">经验</dt><dd class="hero-stat-value mt-1">6年</dd></div>
-                <div><dt class="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-500">方向</dt><dd class="hero-stat-value mt-1">前端</dd></div>
-                <div><dt class="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-500">年龄</dt><dd class="hero-stat-value mt-1">29</dd></div>
+                <div class="pixel-stat"><dt class="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-500">经验</dt><dd class="hero-stat-value mt-1">6年</dd></div>
+                <div class="pixel-stat"><dt class="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-500">方向</dt><dd class="hero-stat-value mt-1">前端</dd></div>
+                <div class="pixel-stat"><dt class="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-500">年龄</dt><dd class="hero-stat-value mt-1">29</dd></div>
               </dl>
             </div>
 
@@ -374,14 +376,13 @@
                 <div class="hero-panel-glow absolute -inset-6 rounded-[2rem] opacity-90" aria-hidden="true"></div>
                 <div class="relative overflow-hidden rounded-[1.75rem] border border-white/12 bg-white/[0.05] backdrop-blur-md p-7 sm:p-9 shadow-2xl shadow-black/20">
                   <div class="flex items-center gap-5">
-                    <div class="relative shrink-0">
-                      <div class="absolute -inset-1.5 rounded-2xl bg-gradient-to-br from-blue-500/50 to-violet-500/30 blur-md" aria-hidden="true"></div>
-                      <img src="./img/avatar3.jpg" alt="头像" class="relative size-20 sm:size-24 rounded-2xl object-cover ring-2 ring-white/25">
+                    <div class="pixel-frame shrink-0">
+                      <img src="./img/avatar3.jpg" alt="头像" class="size-20 sm:size-24 object-cover">
                     </div>
                     <div>
                       <p class="font-mono text-base sm:text-lg font-medium text-zinc-300 lowercase tracking-tight">@reading</p>
                       <p class="mt-0.5 text-base text-zinc-400">前端开发 · 威海</p>
-                      <p class="mt-1.5 text-xs sm:text-sm font-mono text-emerald-400/90">● Available for opportunities</p>
+                      <p class="mt-1.5 text-xs sm:text-sm font-mono text-emerald-400/90"><span class="pixel-blink" aria-hidden="true">■</span> Available for opportunities</p>
                     </div>
                   </div>
                   <div class="mt-7 rounded-xl border border-white/10 bg-black/30 p-5 font-mono text-sm leading-relaxed text-zinc-400">
@@ -393,11 +394,11 @@
                     <p>]</p>
                   </div>
                   <div class="mt-6 flex flex-wrap gap-2.5">
-                    <span class="rounded-full border border-white/12 bg-white/10 px-3.5 py-1.5 text-sm text-zinc-200">Vue 3</span>
-                    <span class="rounded-full border border-white/12 bg-white/10 px-3.5 py-1.5 text-sm text-zinc-200">TypeScript</span>
-                    <span class="rounded-full border border-white/12 bg-white/10 px-3.5 py-1.5 text-sm text-zinc-200">UniApp</span>
-                    <span class="rounded-full border border-white/12 bg-white/10 px-3.5 py-1.5 text-sm text-zinc-200">Vite</span>
-                    <span class="rounded-full border border-white/12 bg-white/10 px-3.5 py-1.5 text-sm text-zinc-200">PHP</span>
+                    <span class="pixel-badge">Vue 3</span>
+                    <span class="pixel-badge">TypeScript</span>
+                    <span class="pixel-badge">UniApp</span>
+                    <span class="pixel-badge">Vite</span>
+                    <span class="pixel-badge">PHP</span>
                   </div>
                 </div>
               </div>
@@ -407,7 +408,11 @@
           <div class="mt-12 flex justify-center lg:justify-start lg:pl-1">
             <a href="#about" class="group inline-flex flex-col items-center gap-2 text-zinc-500 hover:text-zinc-300 transition-colors duration-200 cursor-pointer">
               <span class="text-xs font-mono tracking-widest uppercase">Scroll</span>
-              <svg class="size-4 animate-bounce motion-reduce:animate-none" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25 12 15.75 4.5 8.25" /></svg>
+              <div class="pixel-scroll-icon animate-bounce motion-reduce:animate-none" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+              </div>
             </a>
           </div>
         </div>
@@ -418,19 +423,21 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="grid gap-12 lg:grid-cols-12 lg:gap-16 items-start">
             <div class="lg:col-span-4">
-              <img src="./img/avatar2.jpg" alt="个人照片" class="w-full max-w-sm rounded-2xl object-cover aspect-[3/4] shadow-soft-lg">
+              <div class="pixel-frame-light inline-block max-w-sm w-full">
+                <img src="./img/avatar2.jpg" alt="个人照片" class="w-full object-cover aspect-[3/4]">
+              </div>
             </div>
             <div class="lg:col-span-8">
-              <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary">关于我</h2>
+              <p class="pixel-section-label pixel-section-label-light">About</p>
+              <h2 class="mt-2 font-heading text-3xl sm:text-4xl font-bold text-primary">关于我</h2>
               <p class="mt-2 text-zinc-500">李梓瑞 · Web 前端开发 · 山东威海 · 6 年经验</p>
               <p class="mt-8 text-lg text-zinc-600 leading-relaxed max-w-2xl">对待工作积极、认真、负责。具有较强的学习能力和适应能力，喜欢钻研，能提供高质量的工作。长期关注前端工程化、组件抽象与跨端一致性。</p>
-              <div class="mt-8 rounded-2xl border border-zinc-200/80 bg-white p-6 sm:p-7 max-w-2xl">
-                <p class="text-xs font-mono uppercase tracking-[0.2em] text-zinc-400">AI · Practice</p>
-                <h3 class="mt-2 font-heading text-lg font-bold text-primary">对 AI 的理解与实践</h3>
+              <div class="mt-6 pixel-card-about max-w-2xl">
+                <p class="pixel-section-label pixel-section-label-light text-[10px]">AI · Practice</p>
+                <h3 class="mt-1.5 font-heading text-lg font-bold text-primary">对 AI 的理解与实践</h3>
                 <p class="mt-3 text-sm text-zinc-600 leading-relaxed">我认为 AI 是提升开发效率的协作伙伴，而不是替代工程师判断的捷径。日常使用 Cursor、Claude Code、ChatGPT 等多种 AI 工具，在编码、重构、排查与文档整理等场景都有实践经验，并通过清晰的需求描述与 Code Review 把控产出质量。</p>
                 <ul class="mt-4 space-y-2 text-sm text-zinc-600">
                   <li>· 熟悉与 AI 打交道的完整流程：提问、迭代、验证、落地，而非一次性盲目采纳</li>
-                  <li>· 用 AI 加速样板代码与 E2E 测试思路，把精力留给架构与业务逻辑</li>
                   <li>· 坚持「AI 生成、人工校验」，确保代码可维护、可上线</li>
                 </ul>
               </div>
@@ -453,33 +460,33 @@
       <!-- Skills -->
       <section id="skills" class="section-anchor bg-surface py-16 sm:py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p class="text-xs font-mono uppercase tracking-[0.25em] text-zinc-400">Stack</p>
+          <p class="pixel-section-label pixel-section-label-light">Stack</p>
           <h2 class="mt-2 font-heading text-3xl sm:text-4xl font-bold text-primary">专业技能</h2>
           <p class="mt-2 text-zinc-600">核心技术栈与实践经验</p>
           <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="rounded-2xl border border-zinc-200/80 bg-white p-5">
+            <div class="pixel-card pixel-card-hover p-5">
               <h3 class="font-heading font-semibold text-primary">基础能力</h3>
               <div class="mt-3 flex flex-wrap gap-2">
-                <span class="tech-badge-light">HTML</span><span class="tech-badge-light">CSS</span><span class="tech-badge-light">JavaScript</span><span class="tech-badge-light">TypeScript</span>
-                <span class="tech-badge-light">PHP</span><span class="tech-badge-light">PostgreSQL</span>
+                <span class="pixel-badge-light">HTML</span><span class="pixel-badge-light">CSS</span><span class="pixel-badge-light">JavaScript</span><span class="pixel-badge-light">TypeScript</span>
+                <span class="pixel-badge-light">PHP</span><span class="pixel-badge-light">PostgreSQL</span>
               </div>
             </div>
-            <div class="rounded-2xl border border-zinc-200/80 bg-white p-5">
+            <div class="pixel-card pixel-card-hover p-5">
               <h3 class="font-heading font-semibold text-primary">Vue 生态</h3>
               <div class="mt-3 flex flex-wrap gap-2">
-                <span class="tech-badge-light">Vue 3</span><span class="tech-badge-light">Pinia</span><span class="tech-badge-light">Naive UI</span><span class="tech-badge-light">Vant</span>
+                <span class="pixel-badge-light">Vue 3</span><span class="pixel-badge-light">Pinia</span><span class="pixel-badge-light">Naive UI</span><span class="pixel-badge-light">Vant</span>
               </div>
             </div>
-            <div class="rounded-2xl border border-zinc-200/80 bg-white p-5">
+            <div class="pixel-card pixel-card-hover p-5">
               <h3 class="font-heading font-semibold text-primary">跨端 & 测试</h3>
               <div class="mt-3 flex flex-wrap gap-2">
-                <span class="tech-badge-light">UniApp</span><span class="tech-badge-light">小程序</span><span class="tech-badge-light">E2E</span><span class="tech-badge-light">Vite</span>
+                <span class="pixel-badge-light">UniApp</span><span class="pixel-badge-light">小程序</span><span class="pixel-badge-light">E2E</span><span class="pixel-badge-light">Vite</span>
               </div>
             </div>
-            <div class="rounded-2xl border border-zinc-200/80 bg-white p-5">
+            <div class="pixel-card pixel-card-hover p-5">
               <h3 class="font-heading font-semibold text-primary">AI 协作</h3>
               <div class="mt-3 flex flex-wrap gap-2">
-                <span class="tech-badge-light">Cursor</span><span class="tech-badge-light">Claude Code</span><span class="tech-badge-light">ChatGPT</span><span class="tech-badge-light">Prompt</span>
+                <span class="pixel-badge-light">Cursor</span><span class="pixel-badge-light">Claude Code</span><span class="pixel-badge-light">ChatGPT</span>
               </div>
             </div>
           </div>
@@ -489,10 +496,10 @@
       <!-- Experience -->
       <section id="experience" class="section-anchor py-16 sm:py-20 bg-white border-y border-zinc-200/60">
         <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p class="text-xs font-mono uppercase tracking-[0.25em] text-zinc-400">Experience</p>
+          <p class="pixel-section-label pixel-section-label-light">Experience</p>
           <h2 class="mt-2 font-heading text-3xl sm:text-4xl font-bold text-primary">工作经历</h2>
           <div class="mt-10 space-y-10">
-            <article class="timeline-item">
+            <article class="timeline-item pixel-timeline">
               <time class="text-xs font-mono text-zinc-400">2024.11 – 至今</time>
               <h3 class="mt-2 font-heading text-lg font-bold text-primary">POPER</h3>
               <ul class="mt-3 space-y-2 text-sm text-zinc-600 leading-relaxed">
@@ -501,7 +508,7 @@
                 <li>与产品、后端协作推进需求落地，持续优化交互体验与代码可维护性</li>
               </ul>
             </article>
-            <article class="timeline-item">
+            <article class="timeline-item pixel-timeline">
               <time class="text-xs font-mono text-zinc-400">2023.01 – 2024.07</time>
               <h3 class="mt-2 font-heading text-lg font-bold text-primary">光达在线(北京)健康科技有限公司</h3>
               <ul class="mt-3 space-y-2 text-sm text-zinc-600 leading-relaxed">
@@ -510,7 +517,7 @@
                 <li>解决技术难题，保证迭代速度与产品质量</li>
               </ul>
             </article>
-            <article class="timeline-item">
+            <article class="timeline-item pixel-timeline">
               <time class="text-xs font-mono text-zinc-400">2021.07 – 2022.09</time>
               <h3 class="mt-2 font-heading text-lg font-bold text-primary">余益惠健康科技集团有限公司</h3>
               <ul class="mt-3 space-y-2 text-sm text-zinc-600 leading-relaxed">
@@ -518,7 +525,7 @@
                 <li>与产品、设计协作完善项目规范，确保开发一致性</li>
               </ul>
             </article>
-            <article class="timeline-item">
+            <article class="timeline-item pixel-timeline">
               <time class="text-xs font-mono text-zinc-400">2020.03 – 2021.07</time>
               <h3 class="mt-2 font-heading text-lg font-bold text-primary">威海卓一地产顾问有限公司</h3>
               <ul class="mt-3 space-y-2 text-sm text-zinc-600 leading-relaxed">
@@ -533,12 +540,13 @@
       <!-- Projects · 低调展示，文字为主 -->
       <section id="project" class="section-anchor py-16 sm:py-24 bg-surface">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary">项目集</h2>
+          <p class="pixel-section-label pixel-section-label-light">Projects</p>
+          <h2 class="mt-2 font-heading text-3xl sm:text-4xl font-bold text-primary">项目集</h2>
           <p class="mt-2 text-zinc-600">项目经历与实践经验</p>
 
           <div class="mt-10 space-y-8">
             <!-- LT转运 -->
-            <article class="rounded-2xl border border-zinc-200/80 bg-white p-6 sm:p-8">
+            <article class="pixel-card pixel-card-hover p-6 sm:p-8">
               <div class="grid gap-8 lg:grid-cols-12 lg:items-start">
                 <div class="lg:col-span-7">
                   <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
@@ -546,8 +554,8 @@
                     <time class="text-sm font-mono text-zinc-400 shrink-0">2024.04 – 2024.07</time>
                   </div>
                   <div class="mt-3 flex flex-wrap gap-2">
-                    <span class="tech-badge-light">UniApp</span><span class="tech-badge-light">Vue 3</span><span class="tech-badge-light">Vite</span>
-                    <span class="tech-badge-light">TypeScript</span><span class="tech-badge-light">UnoCSS</span><span class="tech-badge-light">wot-ui</span>
+                    <span class="pixel-badge-light">UniApp</span><span class="pixel-badge-light">Vue 3</span><span class="pixel-badge-light">Vite</span>
+                    <span class="pixel-badge-light">TypeScript</span><span class="pixel-badge-light">UnoCSS</span><span class="pixel-badge-light">wot-ui</span>
                   </div>
                   <p class="mt-4 text-sm text-zinc-600 leading-relaxed">为解决海外竞拍的语言障碍、支付及物流难题而开发，实现竞拍、打包、转运全流程服务。</p>
                   <ul class="mt-4 space-y-2 text-sm text-zinc-600">
@@ -574,14 +582,14 @@
             </article>
 
             <!-- OA -->
-            <article class="rounded-2xl border border-zinc-200/80 bg-white p-6 sm:p-8">
+            <article class="pixel-card pixel-card-hover p-6 sm:p-8">
               <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
                 <h3 class="font-heading text-xl font-bold text-primary">光达在线OA管理系统</h3>
                 <time class="text-sm font-mono text-zinc-400 shrink-0">2022.10 – 2023.04</time>
               </div>
               <div class="mt-3 flex flex-wrap gap-2">
-                <span class="tech-badge-light">Vue 3</span><span class="tech-badge-light">Vite</span><span class="tech-badge-light">Pinia</span>
-                <span class="tech-badge-light">Naive UI</span><span class="tech-badge-light">wangEditor</span><span class="tech-badge-light">vuedraggable</span>
+                <span class="pixel-badge-light">Vue 3</span><span class="pixel-badge-light">Vite</span><span class="pixel-badge-light">Pinia</span>
+                <span class="pixel-badge-light">Naive UI</span><span class="pixel-badge-light">wangEditor</span><span class="pixel-badge-light">vuedraggable</span>
               </div>
               <p class="mt-4 text-sm text-zinc-600 leading-relaxed">企业级 OA 系统，涵盖公告发布、员工检索、操作日志记录等基础功能，支持流程模板定制与表单可视化拖拽配置。</p>
               <ul class="mt-4 space-y-2 text-sm text-zinc-600">
@@ -594,7 +602,7 @@
             </article>
 
             <!-- 木子网 -->
-            <article class="rounded-2xl border border-zinc-200/80 bg-white p-6 sm:p-8">
+            <article class="pixel-card pixel-card-hover p-6 sm:p-8">
               <div class="grid gap-8 lg:grid-cols-12 lg:items-start">
                 <div class="lg:col-span-7">
                   <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
@@ -602,8 +610,8 @@
                     <time class="text-sm font-mono text-zinc-400 shrink-0">2021.07 – 2021.09</time>
                   </div>
                   <div class="mt-3 flex flex-wrap gap-2">
-                    <span class="tech-badge-light">Vue 3</span><span class="tech-badge-light">Vite</span><span class="tech-badge-light">Vant UI</span>
-                    <span class="tech-badge-light">VueUse</span><span class="tech-badge-light">i18n</span>
+                    <span class="pixel-badge-light">Vue 3</span><span class="pixel-badge-light">Vite</span><span class="pixel-badge-light">Vant UI</span>
+                    <span class="pixel-badge-light">VueUse</span><span class="pixel-badge-light">i18n</span>
                   </div>
                   <p class="mt-4 text-sm text-zinc-600 leading-relaxed">面向国内用户的日本药品在线购买平台，支持多语言切换。双角色体系——普通用户与高级经理，高级经理可分享商品获取收益。</p>
                 </div>
@@ -637,7 +645,7 @@
           <a href="#experience" class="text-sm text-zinc-400 hover:text-white transition-colors duration-200 cursor-pointer">经历</a>
           <button type="button" onclick="window.print()" class="text-sm text-zinc-400 hover:text-white transition-colors duration-200 cursor-pointer bg-transparent border-0">导出简历</button>
         </nav>
-        <p class="mt-8 text-center text-xs text-zinc-500">&copy; 2026 reading</p>
+        <p class="mt-4 text-center text-xs text-zinc-500">&copy; 2026 reading</p>
       </div>
     </footer>
   </div>
