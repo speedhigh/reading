@@ -1,0 +1,5 @@
+# Cursor IDE local config & skills
+.cursor/
+
+# Design system generated locally
+design-system/
