@@ -7,7 +7,7 @@
   <link href="./output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
   <title>reading · 前端开发简历</title>
 </head>
@@ -17,7 +17,7 @@
   ::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 4px; }
 </style>
 
-<body class="bg-surface text-primary font-sans antialiased">
+<body class="font-sans antialiased">
   <!-- print -->
   <div class="hidden print:block font-sans">
     <!-- Page 1 · Profile + Experience -->
@@ -300,154 +300,123 @@
   </div>
 
   <!-- web -->
-  <div class="print:hidden">
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:shadow-soft focus:text-primary">跳转到主要内容</a>
+  <div class="print:hidden ed-site">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:rounded-sm focus:bg-white focus:px-4 focus:py-2 focus:shadow-soft focus:text-primary">跳转到主要内容</a>
 
-    <header class="fixed top-4 inset-x-4 z-50 mx-auto max-w-7xl">
-      <nav id="siteNav" class="glass-nav-dark rounded-2xl px-4 py-3 sm:px-6" aria-label="主导航">
-        <div class="flex items-center justify-between">
-          <a href="#home" class="brand-link font-mono lowercase tracking-tight"><span class="pixel-brand-icon" aria-hidden="true"></span>reading</a>
-          <div id="desktopNav" class="hidden lg:flex items-center gap-7">
-            <a href="#home" data-nav="home" class="nav-link nav-link-active">主页</a>
-            <a href="#about" data-nav="about" class="nav-link">关于</a>
-            <a href="#skills" data-nav="skills" class="nav-link">技能</a>
-            <a href="#experience" data-nav="experience" class="nav-link">经历</a>
-            <a href="#project" data-nav="project" class="nav-link">项目</a>
-            <button type="button" id="printPdfButton" class="btn-cta text-xs px-5 py-2">导出简历</button>
+    <header class="fixed top-0 inset-x-0 z-50">
+      <nav id="siteNav" class="ed-nav px-4 sm:px-6 lg:px-8 py-4 sm:py-5" aria-label="主导航">
+        <div class="mx-auto max-w-6xl flex items-center justify-between">
+          <a href="#home" class="ed-brand lowercase">reading</a>
+          <div id="desktopNav" class="hidden lg:flex items-center gap-10">
+            <a href="#home" data-nav="home" class="ed-nav-link ed-nav-link-active">主页</a>
+            <a href="#about" data-nav="about" class="ed-nav-link">关于</a>
+            <a href="#skills" data-nav="skills" class="ed-nav-link">技能</a>
+            <a href="#experience" data-nav="experience" class="ed-nav-link">经历</a>
+            <a href="#project" data-nav="project" class="ed-nav-link">项目</a>
+            <button type="button" id="printPdfButton" class="ed-btn ed-btn-ghost text-xs px-5 py-2 ml-2">导出简历</button>
           </div>
-          <button type="button" id="menuToggle" class="nav-toggle lg:hidden inline-flex items-center justify-center rounded-lg p-2 transition-colors duration-200 cursor-pointer" aria-expanded="false" aria-controls="mobileMenu" aria-label="打开菜单">
+          <button type="button" id="menuToggle" class="ed-nav-toggle lg:hidden inline-flex items-center justify-center" aria-expanded="false" aria-controls="mobileMenu" aria-label="打开菜单">
             <svg id="menuIconOpen" class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
             <svg id="menuIconClose" class="size-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
           </button>
         </div>
-        <div id="mobileMenu" class="hidden lg:hidden mt-3 pt-3 border-t border-white/10">
-          <div class="flex flex-col gap-1">
-            <a href="#home" data-nav="home" class="nav-link nav-link-active rounded-lg px-3 py-2 hover:bg-white/5">主页</a>
-            <a href="#about" data-nav="about" class="nav-link rounded-lg px-3 py-2 hover:bg-white/5">关于</a>
-            <a href="#skills" data-nav="skills" class="nav-link rounded-lg px-3 py-2 hover:bg-white/5">技能</a>
-            <a href="#experience" data-nav="experience" class="nav-link rounded-lg px-3 py-2 hover:bg-white/5">经历</a>
-            <a href="#project" data-nav="project" class="nav-link rounded-lg px-3 py-2 hover:bg-white/5">项目</a>
-            <button type="button" id="printPdfButtonMobile" class="btn-cta mt-2 w-full text-sm">导出简历</button>
+        <div id="mobileMenu" class="hidden lg:hidden mx-auto max-w-6xl mt-4 pt-4 border-t border-white/10">
+          <div class="flex flex-col gap-2">
+            <a href="#home" data-nav="home" class="ed-nav-link ed-nav-link-active py-2">主页</a>
+            <a href="#about" data-nav="about" class="ed-nav-link py-2">关于</a>
+            <a href="#skills" data-nav="skills" class="ed-nav-link py-2">技能</a>
+            <a href="#experience" data-nav="experience" class="ed-nav-link py-2">经历</a>
+            <a href="#project" data-nav="project" class="ed-nav-link py-2">项目</a>
+            <button type="button" id="printPdfButtonMobile" class="ed-btn ed-btn-ghost mt-2 w-full text-sm py-2.5">导出简历</button>
           </div>
         </div>
       </nav>
     </header>
 
     <main id="main-content">
-      <!-- Hero · Linear 气场 -->
-      <section id="home" class="section-anchor relative min-h-[100svh] flex flex-col justify-center overflow-hidden bg-primary text-white">
-        <div class="hero-glow absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-        <div class="hero-orb size-[28rem] -top-24 right-[10%] opacity-70" aria-hidden="true"></div>
-        <div class="hero-orb size-[20rem] bottom-[15%] -left-16 opacity-50" aria-hidden="true"></div>
-        <div class="hero-grid absolute inset-0 pointer-events-none opacity-80" aria-hidden="true"></div>
-        <div class="hero-pixel-float top-[20%] left-[10%]" aria-hidden="true"></div>
-        <div class="hero-pixel-float hero-pixel-float-2 bottom-[28%] right-[15%]" aria-hidden="true"></div>
+      <!-- Hero · Editorial -->
+      <section id="home" class="section-anchor ed-hero ed-hero-light flex flex-col justify-center">
+        <div class="ed-hero-vignette" aria-hidden="true"></div>
+        <div class="ed-hero-grain" aria-hidden="true"></div>
 
-        <div class="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-16 lg:pt-32 lg:pb-24">
-          <div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-10 xl:gap-14">
-            <div class="lg:col-span-6 xl:col-span-5">
-              <p class="text-xs sm:text-sm font-mono uppercase tracking-[0.25em] text-blue-400">
-                <span class="lowercase normal-case tracking-normal text-blue-300/90">reading</span>
-                <span class="text-zinc-600"> · </span>
-                Frontend Engineer · 6 Years
-              </p>
-              <h1 class="hero-display mt-4 sm:mt-5">
-                <span class="hero-display-gradient">体验优先的</span>
-                <span class="block text-white mt-1 sm:mt-2">前端开发</span>
+        <div class="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 sm:pt-36 sm:pb-28 lg:pt-40 lg:pb-32">
+          <div class="grid items-end gap-16 lg:grid-cols-12 lg:gap-20">
+            <div class="lg:col-span-7">
+              <p class="ed-chapter">Chapter 01 — Introduction</p>
+              <h1 class="ed-display mt-6 sm:mt-8 text-balance">
+                <span class="block">体验优先的</span>
+                <span class="block ed-display-accent mt-2 sm:mt-3">前端开发</span>
               </h1>
-              <p class="hero-desc">
+              <p class="ed-lead mt-8 sm:mt-10">
                 构建流畅、可靠、可维护的 Web 与跨端产品界面。
               </p>
-              <p class="hero-tagline mt-4">Vue 生态 · ERP · E2E · AI 协作 · 山东威海</p>
-              <div class="mt-10 sm:mt-12 flex flex-wrap items-center gap-4">
-                <a href="#about" class="btn-cta text-base px-7 py-3.5">关于我</a>
-                <a href="#project" class="btn-ghost text-base px-7 py-3.5">查看项目</a>
-                <button type="button" id="printPdfButtonHero" class="btn-ghost hidden sm:inline-flex text-base px-7 py-3.5">导出简历</button>
+              <p class="ed-meta mt-6">reading · Frontend Engineer · 6 Years</p>
+              <p class="ed-meta mt-2">Vue 生态 · ERP · E2E · AI 协作 · 山东威海</p>
+              <div class="mt-12 sm:mt-14 flex flex-wrap items-center gap-4 sm:gap-6">
+                <a href="#about" class="ed-btn-primary">关于我</a>
+                <a href="#project" class="ed-btn-ghost">查看项目</a>
+                <button type="button" id="printPdfButtonHero" class="ed-btn-ghost hidden sm:inline-flex">导出简历</button>
               </div>
-              <dl class="mt-14 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-6 border-t border-white/10 pt-8 sm:pt-10 max-w-lg">
-                <div class="pixel-stat"><dt class="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-500">经验</dt><dd class="hero-stat-value mt-1">6年</dd></div>
-                <div class="pixel-stat"><dt class="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-500">方向</dt><dd class="hero-stat-value mt-1">前端</dd></div>
-                <div class="pixel-stat"><dt class="text-[11px] sm:text-xs uppercase tracking-wider text-zinc-500">年龄</dt><dd class="hero-stat-value mt-1">29</dd></div>
+              <dl class="mt-20 sm:mt-24 grid grid-cols-3 gap-8 sm:gap-12 max-w-md">
+                <div class="ed-stat"><dd class="ed-stat-value">6年</dd><dt class="ed-stat-label">经验</dt></div>
+                <div class="ed-stat"><dd class="ed-stat-value">前端</dd><dt class="ed-stat-label">方向</dt></div>
+                <div class="ed-stat"><dd class="ed-stat-value">29</dd><dt class="ed-stat-label">年龄</dt></div>
               </dl>
             </div>
 
-            <div class="lg:col-span-6 xl:col-span-7 flex items-center justify-center lg:justify-end">
-              <div class="hero-panel relative w-full max-w-xl">
-                <div class="hero-panel-glow absolute -inset-6 rounded-[2rem] opacity-90" aria-hidden="true"></div>
-                <div class="relative overflow-hidden rounded-[1.75rem] border border-white/12 bg-white/[0.05] backdrop-blur-md p-7 sm:p-9 shadow-2xl shadow-black/20">
-                  <div class="flex items-center gap-5">
-                    <div class="pixel-frame shrink-0">
-                      <img src="./img/avatar3.jpg" alt="头像" class="size-20 sm:size-24 object-cover">
-                    </div>
-                    <div>
-                      <p class="font-mono text-base sm:text-lg font-medium text-zinc-300 lowercase tracking-tight">@reading</p>
-                      <p class="mt-0.5 text-base text-zinc-400">前端开发 · 威海</p>
-                      <p class="mt-1.5 text-xs sm:text-sm font-mono text-emerald-400/90"><span class="pixel-blink" aria-hidden="true">■</span> Available for opportunities</p>
-                    </div>
-                  </div>
-                  <div class="mt-7 rounded-xl border border-white/10 bg-black/30 p-5 font-mono text-sm leading-relaxed text-zinc-400">
-                    <p><span class="text-violet-400">const</span> <span class="text-blue-300">focus</span> = [</p>
-                    <p class="pl-4"><span class="text-zinc-300">'Vue 3 工程化'</span>,</p>
-                    <p class="pl-4"><span class="text-zinc-300">'跨端小程序'</span>,</p>
-                    <p class="pl-4"><span class="text-zinc-300">'企业级后台'</span>,</p>
-                    <p class="pl-4"><span class="text-zinc-300">'AI 辅助开发'</span>,</p>
-                    <p>]</p>
-                  </div>
-                  <div class="mt-6 flex flex-wrap gap-2.5">
-                    <span class="pixel-badge">Vue 3</span>
-                    <span class="pixel-badge">TypeScript</span>
-                    <span class="pixel-badge">UniApp</span>
-                    <span class="pixel-badge">Vite</span>
-                    <span class="pixel-badge">PHP</span>
-                  </div>
-                </div>
+            <div class="lg:col-span-5">
+              <div class="ed-portrait max-w-sm lg:max-w-none lg:ml-auto">
+                <img src="./img/avatar3.jpg" alt="头像" class="aspect-[4/5] w-full">
+              </div>
+              <p class="ed-portrait-caption">@reading · 前端开发 · 威海</p>
+              <div class="ed-manifesto mt-10 lg:mt-12 max-w-sm lg:ml-auto">
+                <p>长期聚焦于 Vue 3 工程化、跨端小程序、企业级后台与 AI 辅助开发。</p>
+                <p class="mt-4 ed-manifesto-status text-sm tracking-wide">Available for opportunities</p>
               </div>
             </div>
           </div>
 
-          <div class="mt-12 flex justify-center lg:justify-start lg:pl-1">
-            <a href="#about" class="group inline-flex flex-col items-center gap-2 text-zinc-500 hover:text-zinc-300 transition-colors duration-200 cursor-pointer">
-              <span class="text-xs font-mono tracking-widest uppercase">Scroll</span>
-              <div class="pixel-scroll-icon animate-bounce motion-reduce:animate-none" aria-hidden="true">
-                <span></span><span></span><span></span>
-                <span></span><span></span><span></span>
-                <span></span><span></span><span></span>
-              </div>
+          <div class="mt-20 sm:mt-28 flex justify-center lg:justify-start">
+            <a href="#about" class="ed-scroll-hint">
+              <span class="ed-chapter text-[10px]">Scroll</span>
+              <span class="ed-scroll-line" aria-hidden="true"></span>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- About · 编辑式版面 -->
-      <section id="about" class="section-anchor border-y border-zinc-200/80 bg-zinc-50/80 py-20 sm:py-24">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="grid gap-12 lg:grid-cols-12 lg:gap-16 items-start">
-            <div class="lg:col-span-4">
-              <div class="pixel-frame-light inline-block max-w-sm w-full">
-                <img src="./img/avatar2.jpg" alt="个人照片" class="w-full object-cover aspect-[3/4]">
+      <!-- About -->
+      <section id="about" class="section-anchor ed-section bg-paper">
+        <div class="ed-section-wide">
+          <div class="grid gap-16 lg:grid-cols-12 lg:gap-20 items-start">
+            <div class="lg:col-span-5 lg:sticky lg:top-28">
+              <div class="ed-photo">
+                <img src="./img/avatar2.jpg" alt="个人照片" class="aspect-[3/4] w-full">
               </div>
             </div>
-            <div class="lg:col-span-8">
-              <p class="pixel-section-label pixel-section-label-light">About</p>
-              <h2 class="mt-2 font-heading text-3xl sm:text-4xl font-bold text-primary">关于我</h2>
-              <p class="mt-2 text-zinc-500">李梓瑞 · Web 前端开发 · 山东威海 · 6 年经验</p>
-              <p class="mt-8 text-lg text-zinc-600 leading-relaxed max-w-2xl">对待工作积极、认真、负责。具有较强的学习能力和适应能力，喜欢钻研，能提供高质量的工作。长期关注前端工程化、组件抽象与跨端一致性。</p>
-              <div class="mt-6 pixel-card-about max-w-2xl">
-                <p class="pixel-section-label pixel-section-label-light text-[10px]">AI · Practice</p>
-                <h3 class="mt-1.5 font-heading text-lg font-bold text-primary">对 AI 的理解与实践</h3>
-                <p class="mt-3 text-sm text-zinc-600 leading-relaxed">我认为 AI 是提升开发效率的协作伙伴，而不是替代工程师判断的捷径。日常使用 Cursor、Claude Code、ChatGPT 等多种 AI 工具，在编码、重构、排查与文档整理等场景都有实践经验，并通过清晰的需求描述与 Code Review 把控产出质量。</p>
-                <ul class="mt-4 space-y-2 text-sm text-zinc-600">
+            <div class="lg:col-span-7 lg:pl-4">
+              <p class="ed-chapter ed-chapter--light">Chapter 02 — About</p>
+              <h2 class="ed-heading mt-4">关于我</h2>
+              <p class="ed-meta mt-4">李梓瑞 · Web 前端开发 · 山东威海 · 6 年经验</p>
+              <p class="ed-prose mt-10 max-w-2xl">对待工作积极、认真、负责。具有较强的学习能力和适应能力，喜欢钻研，能提供高质量的工作。长期关注前端工程化、组件抽象与跨端一致性。</p>
+
+              <div class="ed-aside max-w-2xl">
+                <p class="ed-chapter ed-chapter--light text-[10px]">AI · Practice</p>
+                <h3 class="ed-aside-title mt-3">对 AI 的理解与实践</h3>
+                <p class="ed-prose-sm mt-5">我认为 AI 是提升开发效率的协作伙伴，而不是替代工程师判断的捷径。日常使用 Cursor、Claude Code、ChatGPT 等多种 AI 工具，在编码、重构、排查与文档整理等场景都有实践经验，并通过清晰的需求描述与 Code Review 把控产出质量。</p>
+                <ul class="mt-6 space-y-3 ed-prose-sm">
                   <li>· 熟悉与 AI 打交道的完整流程：提问、迭代、验证、落地，而非一次性盲目采纳</li>
                   <li>· 坚持「AI 生成、人工校验」，确保代码可维护、可上线</li>
                 </ul>
               </div>
-              <div class="mt-10 grid sm:grid-cols-2 gap-6 max-w-xl">
-                <a href="tel:15166135648" class="group flex items-center gap-3 text-zinc-700 hover:text-cta transition-colors cursor-pointer">
-                  <span class="flex size-10 items-center justify-center rounded-full bg-white border border-zinc-200 text-zinc-400 group-hover:border-blue-200 group-hover:text-cta transition-colors"><svg class="size-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd"/></svg></span>
+
+              <div class="mt-14 space-y-5 max-w-md">
+                <a href="tel:15166135648" class="ed-contact">
+                  <span class="ed-contact-label">电话</span>
                   <span>15166135648</span>
                 </a>
-                <a href="mailto:image8870@gmail.com" class="group flex items-center gap-3 text-zinc-700 hover:text-cta transition-colors cursor-pointer">
-                  <span class="flex size-10 items-center justify-center rounded-full bg-white border border-zinc-200 text-zinc-400 group-hover:border-blue-200 group-hover:text-cta transition-colors"><svg class="size-4" fill="currentColor" viewBox="0 0 24 24"><path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/><path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/></svg></span>
+                <a href="mailto:image8870@gmail.com" class="ed-contact">
+                  <span class="ed-contact-label">邮箱</span>
                   <span>image8870@gmail.com</span>
                 </a>
               </div>
@@ -456,79 +425,69 @@
         </div>
       </section>
 
-
       <!-- Skills -->
-      <section id="skills" class="section-anchor bg-surface py-16 sm:py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p class="pixel-section-label pixel-section-label-light">Stack</p>
-          <h2 class="mt-2 font-heading text-3xl sm:text-4xl font-bold text-primary">专业技能</h2>
-          <p class="mt-2 text-zinc-600">核心技术栈与实践经验</p>
-          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="pixel-card pixel-card-hover p-5">
-              <h3 class="font-heading font-semibold text-primary">基础能力</h3>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="pixel-badge-light">HTML</span><span class="pixel-badge-light">CSS</span><span class="pixel-badge-light">JavaScript</span><span class="pixel-badge-light">TypeScript</span>
-                <span class="pixel-badge-light">PHP</span><span class="pixel-badge-light">PostgreSQL</span>
-              </div>
+      <section id="skills" class="section-anchor ed-section bg-surface">
+        <div class="ed-section-wide">
+          <p class="ed-chapter ed-chapter--light">Chapter 03 — Stack</p>
+          <h2 class="ed-heading mt-4">专业技能</h2>
+          <p class="ed-meta mt-4">核心技术栈与实践经验</p>
+          <div class="mt-16 sm:mt-20 grid gap-x-16 gap-y-12 sm:grid-cols-2">
+            <div class="ed-skill-group border-t-0 pt-0">
+              <h3 class="ed-skill-title">基础能力</h3>
+              <p class="ed-skill-list">HTML · CSS · JavaScript · TypeScript · PHP · PostgreSQL</p>
             </div>
-            <div class="pixel-card pixel-card-hover p-5">
-              <h3 class="font-heading font-semibold text-primary">Vue 生态</h3>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="pixel-badge-light">Vue 3</span><span class="pixel-badge-light">Pinia</span><span class="pixel-badge-light">Naive UI</span><span class="pixel-badge-light">Vant</span>
-              </div>
+            <div class="ed-skill-group border-t-0 pt-0 sm:border-t sm:pt-8">
+              <h3 class="ed-skill-title">Vue 生态</h3>
+              <p class="ed-skill-list">Vue 3 · Pinia · Naive UI · Vant</p>
             </div>
-            <div class="pixel-card pixel-card-hover p-5">
-              <h3 class="font-heading font-semibold text-primary">跨端 & 测试</h3>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="pixel-badge-light">UniApp</span><span class="pixel-badge-light">小程序</span><span class="pixel-badge-light">E2E</span><span class="pixel-badge-light">Vite</span>
-              </div>
+            <div class="ed-skill-group">
+              <h3 class="ed-skill-title">跨端 & 测试</h3>
+              <p class="ed-skill-list">UniApp · 小程序 · E2E · Vite</p>
             </div>
-            <div class="pixel-card pixel-card-hover p-5">
-              <h3 class="font-heading font-semibold text-primary">AI 协作</h3>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="pixel-badge-light">Cursor</span><span class="pixel-badge-light">Claude Code</span><span class="pixel-badge-light">ChatGPT</span>
-              </div>
+            <div class="ed-skill-group">
+              <h3 class="ed-skill-title">AI 协作</h3>
+              <p class="ed-skill-list">Cursor · Claude Code · ChatGPT</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Experience -->
-      <section id="experience" class="section-anchor py-16 sm:py-20 bg-white border-y border-zinc-200/60">
-        <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p class="pixel-section-label pixel-section-label-light">Experience</p>
-          <h2 class="mt-2 font-heading text-3xl sm:text-4xl font-bold text-primary">工作经历</h2>
-          <div class="mt-10 space-y-10">
-            <article class="timeline-item pixel-timeline">
-              <time class="text-xs font-mono text-zinc-400">2024.11 – 至今</time>
-              <h3 class="mt-2 font-heading text-lg font-bold text-primary">POPER</h3>
-              <ul class="mt-3 space-y-2 text-sm text-zinc-600 leading-relaxed">
+      <section id="experience" class="section-anchor ed-section bg-paper">
+        <div class="ed-section-narrow">
+          <p class="ed-chapter ed-chapter--light">Chapter 04 — Experience</p>
+          <h2 class="ed-heading mt-4">工作经历</h2>
+          <div class="mt-16 sm:mt-20 space-y-0">
+            <article class="ed-timeline">
+              <time class="ed-timeline-time">2024.11 – 至今</time>
+              <h3 class="ed-timeline-title">POPER</h3>
+              <ul class="mt-5 space-y-3 ed-prose-sm">
                 <li>负责 ERP 项目的前端开发与功能迭代，参与复杂业务页面、表单与组件模块的实现</li>
                 <li>编写与维护 E2E 自动化测试，覆盖核心业务流程，保障版本回归质量</li>
                 <li>与产品、后端协作推进需求落地，持续优化交互体验与代码可维护性</li>
               </ul>
             </article>
-            <article class="timeline-item pixel-timeline">
-              <time class="text-xs font-mono text-zinc-400">2023.01 – 2024.07</time>
-              <h3 class="mt-2 font-heading text-lg font-bold text-primary">光达在线(北京)健康科技有限公司</h3>
-              <ul class="mt-3 space-y-2 text-sm text-zinc-600 leading-relaxed">
+            <article class="ed-timeline">
+              <time class="ed-timeline-time">2023.01 – 2024.07</time>
+              <h3 class="ed-timeline-title">光达在线(北京)健康科技有限公司</h3>
+              <ul class="mt-5 space-y-3 ed-prose-sm">
                 <li>负责光大健康 APP 后台、光达在线 OA 系统、CRM-H 医疗系统等项目的开发</li>
                 <li>封装公共方法与组件，提高代码复用性和可维护性</li>
                 <li>解决技术难题，保证迭代速度与产品质量</li>
               </ul>
             </article>
-            <article class="timeline-item pixel-timeline">
-              <time class="text-xs font-mono text-zinc-400">2021.07 – 2022.09</time>
-              <h3 class="mt-2 font-heading text-lg font-bold text-primary">余益惠健康科技集团有限公司</h3>
-              <ul class="mt-3 space-y-2 text-sm text-zinc-600 leading-relaxed">
+            <article class="ed-timeline">
+              <time class="ed-timeline-time">2021.07 – 2022.09</time>
+              <h3 class="ed-timeline-title">余益惠健康科技集团有限公司</h3>
+              <ul class="mt-5 space-y-3 ed-prose-sm">
                 <li>负责香港木子网、九州药品网、20号商城小程序、余益惠健康平台的开发及维护</li>
                 <li>与产品、设计协作完善项目规范，确保开发一致性</li>
               </ul>
             </article>
-            <article class="timeline-item pixel-timeline">
-              <time class="text-xs font-mono text-zinc-400">2020.03 – 2021.07</time>
-              <h3 class="mt-2 font-heading text-lg font-bold text-primary">威海卓一地产顾问有限公司</h3>
-              <ul class="mt-3 space-y-2 text-sm text-zinc-600 leading-relaxed">
+            <article class="ed-timeline">
+              <time class="ed-timeline-time">2020.03 – 2021.07</time>
+              <h3 class="ed-timeline-title">威海卓一地产顾问有限公司</h3>
+              <ul class="mt-5 space-y-3 ed-prose-sm">
                 <li>负责内部支撑平台、官网、anbred 新房二手房咨询平台的开发及维护</li>
                 <li>参与公司项目从 Vue 2 到 Vue 3 的升级</li>
               </ul>
@@ -537,96 +496,84 @@
         </div>
       </section>
 
-      <!-- Projects · 低调展示，文字为主 -->
-      <section id="project" class="section-anchor py-16 sm:py-24 bg-surface">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p class="pixel-section-label pixel-section-label-light">Projects</p>
-          <h2 class="mt-2 font-heading text-3xl sm:text-4xl font-bold text-primary">项目集</h2>
-          <p class="mt-2 text-zinc-600">项目经历与实践经验</p>
+      <!-- Projects -->
+      <section id="project" class="section-anchor ed-section bg-surface">
+        <div class="ed-section-wide">
+          <p class="ed-chapter ed-chapter--light">Chapter 05 — Projects</p>
+          <h2 class="ed-heading mt-4">项目集</h2>
+          <p class="ed-meta mt-4">项目经历与实践经验</p>
 
-          <div class="mt-10 space-y-8">
-            <!-- LT转运 -->
-            <article class="pixel-card pixel-card-hover p-6 sm:p-8">
-              <div class="grid gap-8 lg:grid-cols-12 lg:items-start">
+          <div class="mt-16 sm:mt-24">
+            <article class="ed-project">
+              <p class="ed-project-index">01</p>
+              <div class="grid gap-12 lg:grid-cols-12 lg:gap-16 items-start">
                 <div class="lg:col-span-7">
-                  <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                    <h3 class="font-heading text-xl font-bold text-primary">LT转运-雅虎拍卖小帮手（小程序）</h3>
-                    <time class="text-sm font-mono text-zinc-400 shrink-0">2024.04 – 2024.07</time>
-                  </div>
-                  <div class="mt-3 flex flex-wrap gap-2">
-                    <span class="pixel-badge-light">UniApp</span><span class="pixel-badge-light">Vue 3</span><span class="pixel-badge-light">Vite</span>
-                    <span class="pixel-badge-light">TypeScript</span><span class="pixel-badge-light">UnoCSS</span><span class="pixel-badge-light">wot-ui</span>
-                  </div>
-                  <p class="mt-4 text-sm text-zinc-600 leading-relaxed">为解决海外竞拍的语言障碍、支付及物流难题而开发，实现竞拍、打包、转运全流程服务。</p>
-                  <ul class="mt-4 space-y-2 text-sm text-zinc-600">
-                    <li><strong class="text-primary">前沿技术栈：</strong>无需 HBuilderX，VSCode 命令行即可运行完整 UniApp 工程。</li>
-                    <li><strong class="text-primary">开发体验：</strong>@uni-helper 约定式路由、Layout 布局等工程化能力。</li>
+                  <h3 class="ed-project-title">LT转运-雅虎拍卖小帮手（小程序）</h3>
+                  <p class="ed-project-meta">2024.04 – 2024.07</p>
+                  <p class="ed-project-meta mt-2">UniApp · Vue 3 · Vite · TypeScript · UnoCSS · wot-ui</p>
+                  <p class="ed-prose-sm mt-8">为解决海外竞拍的语言障碍、支付及物流难题而开发，实现竞拍、打包、转运全流程服务。</p>
+                  <ul class="mt-6 space-y-3 ed-prose-sm">
+                    <li><strong class="font-medium text-primary">前沿技术栈：</strong>无需 HBuilderX，VSCode 命令行即可运行完整 UniApp 工程。</li>
+                    <li><strong class="font-medium text-primary">开发体验：</strong>@uni-helper 约定式路由、Layout 布局等工程化能力。</li>
                   </ul>
                 </div>
                 <div class="lg:col-span-5">
                   <div class="carousel" data-carousel="lt">
-                    <div class="phone-frame w-48 sm:w-52 mx-auto">
-                      <div class="carousel-slide active pt-3"><img src="./img/LT_01.jpg" alt="LT转运截图 1"></div>
-                      <div class="carousel-slide pt-3"><img src="./img/LT_02.jpg" alt="LT转运截图 2"></div>
-                      <div class="carousel-slide pt-3"><img src="./img/LT_03.jpg" alt="LT转运截图 3"></div>
-                      <div class="carousel-slide pt-3"><img src="./img/LT_04.jpg" alt="LT转运截图 4"></div>
+                    <div class="ed-device w-44 sm:w-48 mx-auto lg:ml-auto lg:mr-0">
+                      <div class="carousel-slide active"><img src="./img/LT_01.jpg" alt="LT转运截图 1"></div>
+                      <div class="carousel-slide"><img src="./img/LT_02.jpg" alt="LT转运截图 2"></div>
+                      <div class="carousel-slide"><img src="./img/LT_03.jpg" alt="LT转运截图 3"></div>
+                      <div class="carousel-slide"><img src="./img/LT_04.jpg" alt="LT转运截图 4"></div>
                     </div>
-                    <div class="mt-3 flex items-center justify-center gap-3">
-                      <button type="button" data-carousel-prev class="rounded-lg border border-zinc-200 bg-white p-1.5 text-zinc-500 hover:bg-zinc-50 transition-colors cursor-pointer" aria-label="上一张"><svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg></button>
-                      <div class="flex gap-1.5" data-carousel-dots></div>
-                      <button type="button" data-carousel-next class="rounded-lg border border-zinc-200 bg-white p-1.5 text-zinc-500 hover:bg-zinc-50 transition-colors cursor-pointer" aria-label="下一张"><svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg></button>
+                    <div class="mt-5 flex items-center justify-center lg:justify-end gap-4">
+                      <button type="button" data-carousel-prev class="ed-carousel-btn" aria-label="上一张"><svg class="size-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg></button>
+                      <div class="flex gap-2" data-carousel-dots></div>
+                      <button type="button" data-carousel-next class="ed-carousel-btn" aria-label="下一张"><svg class="size-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg></button>
                     </div>
+                    <p class="ed-project-caption text-center lg:text-right mt-3">Fig. 01 — LT转运 界面截图</p>
                   </div>
                 </div>
               </div>
             </article>
 
-            <!-- OA -->
-            <article class="pixel-card pixel-card-hover p-6 sm:p-8">
-              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                <h3 class="font-heading text-xl font-bold text-primary">光达在线OA管理系统</h3>
-                <time class="text-sm font-mono text-zinc-400 shrink-0">2022.10 – 2023.04</time>
-              </div>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="pixel-badge-light">Vue 3</span><span class="pixel-badge-light">Vite</span><span class="pixel-badge-light">Pinia</span>
-                <span class="pixel-badge-light">Naive UI</span><span class="pixel-badge-light">wangEditor</span><span class="pixel-badge-light">vuedraggable</span>
-              </div>
-              <p class="mt-4 text-sm text-zinc-600 leading-relaxed">企业级 OA 系统，涵盖公告发布、员工检索、操作日志记录等基础功能，支持流程模板定制与表单可视化拖拽配置。</p>
-              <ul class="mt-4 space-y-2 text-sm text-zinc-600">
-                <li><strong class="text-primary">定制化日志板块：</strong>通过对 wangEditor 二次封装，复刻钉钉日志功能特性。</li>
-                <li><strong class="text-primary">交互表单可视化构建：</strong>业务表单界面化组件拖拽配置，提升灵活性与可扩展性。</li>
+            <article class="ed-project">
+              <p class="ed-project-index">02</p>
+              <h3 class="ed-project-title">光达在线OA管理系统</h3>
+              <p class="ed-project-meta">2022.10 – 2023.04</p>
+              <p class="ed-project-meta mt-2">Vue 3 · Vite · Pinia · Naive UI · wangEditor · vuedraggable</p>
+              <p class="ed-prose-sm mt-8 max-w-3xl">企业级 OA 系统，涵盖公告发布、员工检索、操作日志记录等基础功能，支持流程模板定制与表单可视化拖拽配置。</p>
+              <ul class="mt-6 space-y-3 ed-prose-sm max-w-3xl">
+                <li><strong class="font-medium text-primary">定制化日志板块：</strong>通过对 wangEditor 二次封装，复刻钉钉日志功能特性。</li>
+                <li><strong class="font-medium text-primary">交互表单可视化构建：</strong>业务表单界面化组件拖拽配置，提升灵活性与可扩展性。</li>
               </ul>
-              <div class="mt-5 max-w-xl rounded-xl overflow-hidden border border-zinc-100">
+              <div class="ed-shot mt-10 max-w-2xl">
                 <img src="./img/OA_01.jpeg" alt="光达在线OA管理系统截图" class="w-full">
               </div>
+              <p class="ed-project-caption mt-3">Fig. 02 — 光达在线 OA 管理系统</p>
             </article>
 
-            <!-- 木子网 -->
-            <article class="pixel-card pixel-card-hover p-6 sm:p-8">
-              <div class="grid gap-8 lg:grid-cols-12 lg:items-start">
+            <article class="ed-project">
+              <p class="ed-project-index">03</p>
+              <div class="grid gap-12 lg:grid-cols-12 lg:gap-16 items-start">
                 <div class="lg:col-span-7">
-                  <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-                    <h3 class="font-heading text-xl font-bold text-primary">香港木子网</h3>
-                    <time class="text-sm font-mono text-zinc-400 shrink-0">2021.07 – 2021.09</time>
-                  </div>
-                  <div class="mt-3 flex flex-wrap gap-2">
-                    <span class="pixel-badge-light">Vue 3</span><span class="pixel-badge-light">Vite</span><span class="pixel-badge-light">Vant UI</span>
-                    <span class="pixel-badge-light">VueUse</span><span class="pixel-badge-light">i18n</span>
-                  </div>
-                  <p class="mt-4 text-sm text-zinc-600 leading-relaxed">面向国内用户的日本药品在线购买平台，支持多语言切换。双角色体系——普通用户与高级经理，高级经理可分享商品获取收益。</p>
+                  <h3 class="ed-project-title">香港木子网</h3>
+                  <p class="ed-project-meta">2021.07 – 2021.09</p>
+                  <p class="ed-project-meta mt-2">Vue 3 · Vite · Vant UI · VueUse · i18n</p>
+                  <p class="ed-prose-sm mt-8">面向国内用户的日本药品在线购买平台，支持多语言切换。双角色体系——普通用户与高级经理，高级经理可分享商品获取收益。</p>
                 </div>
                 <div class="lg:col-span-5">
                   <div class="carousel" data-carousel="muzi">
-                    <div class="phone-frame w-48 sm:w-52 mx-auto">
-                      <div class="carousel-slide active pt-3"><img src="./img/muzi_01.png" alt="香港木子网截图 1"></div>
-                      <div class="carousel-slide pt-3"><img src="./img/muzi_02.png" alt="香港木子网截图 2"></div>
-                      <div class="carousel-slide pt-3"><img src="./img/muzi_03.png" alt="香港木子网截图 3"></div>
+                    <div class="ed-device w-44 sm:w-48 mx-auto lg:ml-auto lg:mr-0">
+                      <div class="carousel-slide active"><img src="./img/muzi_01.png" alt="香港木子网截图 1"></div>
+                      <div class="carousel-slide"><img src="./img/muzi_02.png" alt="香港木子网截图 2"></div>
+                      <div class="carousel-slide"><img src="./img/muzi_03.png" alt="香港木子网截图 3"></div>
                     </div>
-                    <div class="mt-3 flex items-center justify-center gap-3">
-                      <button type="button" data-carousel-prev class="rounded-lg border border-zinc-200 bg-white p-1.5 text-zinc-500 hover:bg-zinc-50 transition-colors cursor-pointer" aria-label="上一张"><svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg></button>
-                      <div class="flex gap-1.5" data-carousel-dots></div>
-                      <button type="button" data-carousel-next class="rounded-lg border border-zinc-200 bg-white p-1.5 text-zinc-500 hover:bg-zinc-50 transition-colors cursor-pointer" aria-label="下一张"><svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg></button>
+                    <div class="mt-5 flex items-center justify-center lg:justify-end gap-4">
+                      <button type="button" data-carousel-prev class="ed-carousel-btn" aria-label="上一张"><svg class="size-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg></button>
+                      <div class="flex gap-2" data-carousel-dots></div>
+                      <button type="button" data-carousel-next class="ed-carousel-btn" aria-label="下一张"><svg class="size-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg></button>
                     </div>
+                    <p class="ed-project-caption text-center lg:text-right mt-3">Fig. 03 — 香港木子网 界面截图</p>
                   </div>
                 </div>
               </div>
@@ -634,18 +581,17 @@
           </div>
         </div>
       </section>
-
     </main>
 
-    <footer class="bg-primary border-t border-white/5">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3" aria-label="页脚导航">
-          <a href="#about" class="text-sm text-zinc-400 hover:text-white transition-colors duration-200 cursor-pointer">关于</a>
-          <a href="#project" class="text-sm text-zinc-400 hover:text-white transition-colors duration-200 cursor-pointer">项目</a>
-          <a href="#experience" class="text-sm text-zinc-400 hover:text-white transition-colors duration-200 cursor-pointer">经历</a>
-          <button type="button" onclick="window.print()" class="text-sm text-zinc-400 hover:text-white transition-colors duration-200 cursor-pointer bg-transparent border-0">导出简历</button>
+    <footer class="ed-footer">
+      <div class="ed-section-wide py-16 sm:py-20">
+        <nav class="flex flex-wrap justify-center gap-x-10 gap-y-3" aria-label="页脚导航">
+          <a href="#about" class="ed-footer-link">关于</a>
+          <a href="#project" class="ed-footer-link">项目</a>
+          <a href="#experience" class="ed-footer-link">经历</a>
+          <button type="button" onclick="window.print()" class="ed-footer-link bg-transparent border-0">导出简历</button>
         </nav>
-        <p class="mt-4 text-center text-xs text-zinc-500">&copy; 2026 reading</p>
+        <p class="mt-8 text-center text-xs text-stone-600 tracking-[0.2em] uppercase">&copy; 2026 reading</p>
       </div>
     </footer>
   </div>
@@ -662,16 +608,23 @@
     btn.addEventListener('click', printResume);
   });
 
-  // Nav: dark on hero → light on scroll
+  // Nav: transparent on hero → paper on scroll
   var siteNav = document.getElementById('siteNav');
   var hero = document.getElementById('home');
 
   function updateNavTheme() {
     if (!siteNav || !hero) return;
     var heroBottom = hero.getBoundingClientRect().bottom;
-    var useLight = heroBottom < 80;
-    siteNav.classList.toggle('glass-nav', useLight);
-    siteNav.classList.toggle('glass-nav-dark', !useLight);
+    var scrolled = heroBottom < 80;
+    siteNav.classList.toggle('ed-nav--scrolled', scrolled);
+    var printBtn = document.getElementById('printPdfButton');
+    if (printBtn) {
+      if (scrolled) {
+        printBtn.className = 'ed-btn ed-btn-primary--light text-xs px-5 py-2 ml-2';
+      } else {
+        printBtn.className = 'ed-btn ed-btn-ghost text-xs px-5 py-2 ml-2';
+      }
+    }
   }
 
   window.addEventListener('scroll', updateNavTheme, { passive: true });
@@ -709,7 +662,7 @@
   function setActiveNav(id) {
     navLinks.forEach(function (link) {
       var isActive = link.getAttribute('data-nav') === id;
-      link.classList.toggle('nav-link-active', isActive);
+      link.classList.toggle('ed-nav-link-active', isActive);
     });
   }
 
@@ -735,27 +688,26 @@
     var nextBtn = carousel.querySelector('[data-carousel-next]');
     if (!slides.length || !dotsContainer) return;
     var current = 0;
-    var isDark = carousel.closest('.bg-zinc-950') !== null;
 
     slides.forEach(function (_, i) {
       var dot = document.createElement('button');
       dot.type = 'button';
-      dot.className = 'size-2 rounded-full transition-colors duration-200 cursor-pointer ' + (i === 0 ? 'bg-cta' : (isDark ? 'bg-zinc-600' : 'bg-zinc-300'));
+      dot.className = 'size-1.5 rounded-full transition-colors duration-300 cursor-pointer ' + (i === 0 ? 'bg-primary' : 'bg-stone-300');
       dot.setAttribute('aria-label', '第 ' + (i + 1) + ' 张');
       dot.addEventListener('click', function () { goTo(i); });
       dotsContainer.appendChild(dot);
     });
 
     var dots = dotsContainer.querySelectorAll('button');
-    var inactiveClass = isDark ? 'bg-zinc-600' : 'bg-zinc-300';
+    var inactiveClass = 'bg-stone-300';
 
     function goTo(index) {
       slides[current].classList.remove('active');
-      dots[current].classList.remove('bg-cta');
+      dots[current].classList.remove('bg-primary');
       dots[current].classList.add(inactiveClass);
       current = (index + slides.length) % slides.length;
       slides[current].classList.add('active');
-      dots[current].classList.add('bg-cta');
+      dots[current].classList.add('bg-primary');
       dots[current].classList.remove(inactiveClass);
     }
 

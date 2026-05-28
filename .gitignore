@@ -3,3 +3,5 @@
 
 # Design system generated locally
 design-system/
+
+node_modules/

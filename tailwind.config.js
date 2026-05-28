@@ -6,21 +6,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#18181B',
-        cta: '#2563EB',
-        surface: '#FAFAFA',
+        primary: '#1C1917',
+        cta: '#44403C',
+        accent: '#A16207',
+        gold: '#C4A77D',
+        surface: '#FAF8F5',
+        paper: '#F5F2EB',
+        ink: '#0C0A09',
       },
       fontFamily: {
-        heading: ['Archivo', 'Noto Sans SC', ...defaultTheme.fontFamily.sans],
-        sans: ['Space Grotesk', 'Noto Sans SC', ...defaultTheme.fontFamily.sans],
+        serif: ['"Noto Serif SC"', 'Georgia', ...defaultTheme.fontFamily.serif],
+        heading: ['"Noto Serif SC"', 'Georgia', ...defaultTheme.fontFamily.serif],
+        sans: ['"Noto Sans SC"', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
-        soft: '0 4px 24px rgba(24, 24, 27, 0.06), 0 1px 3px rgba(24, 24, 27, 0.04)',
-        'soft-lg': '0 8px 40px rgba(24, 24, 27, 0.08), 0 2px 8px rgba(24, 24, 27, 0.04)',
-        glass: '0 4px 30px rgba(0, 0, 0, 0.06)',
-      },
-      borderRadius: {
-        bento: '1.25rem',
+        soft: '0 2px 20px rgba(28, 25, 23, 0.05)',
+        'soft-lg': '0 8px 40px rgba(28, 25, 23, 0.07)',
       },
     },
   },
